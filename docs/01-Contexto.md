@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Trabalho realizado na matéria de Trabalho Interdiscplinar de Aplicações Web, com o objetivo de manejar o tempo, visto a rotina extensa da maioria das pessoas. Em vista um dos grandes problemas da atualidade, a falta de tempo, nosso grupo realizou um projeto sobre gestão de tempo.
 
 ## Problema
 Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.

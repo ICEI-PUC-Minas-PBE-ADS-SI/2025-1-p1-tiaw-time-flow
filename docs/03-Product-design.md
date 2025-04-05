@@ -3,19 +3,16 @@
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Neste momento, transformam-se os insights e validações obtidos em soluções tangíveis e utilizáveis. Esta fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia, e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que especificam a interface e a experiência do usuário.
 
 
 ## Histórias de usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas  ⚠️ EXEMPLO ⚠️         | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
+![alt text](<images/Historias de usuário.png>)
+![alt text](<images/Historias de usuario 2.png>)
+![alt text](<images/Historias de usuario 3.png>)
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
@@ -35,11 +32,11 @@ Apresente aqui as histórias de usuários que são relevantes para o projeto da 
 
 ##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
+![alt text](<images/Proposta de valor.png>)
+![alt text](<images/Proposta de valor 2.png>)
+![alt text](<images/Proposta de valor 3.png>)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que auxilia na definição do tipo de produto ou serviço que melhor atende às personas previamente estabelecidas.
+
 
 
 > **Links úteis**:
@@ -51,10 +48,11 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 ### Requisitos funcionais
 
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| ID     | Descrição do Requisito                                   | Prioridade|
+| ----- | ---------------------------------------------- | ----------  |
+| RF-001 | Permitir que o usuário cadastre tarefas | ALTA            |
+| RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA         |
+| RF-003 | Permitir que o usuário faça cadastro e login   | MÉDIA         |
 
 ### Requisitos não funcionais
 
