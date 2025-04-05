@@ -1,8 +1,5 @@
 # Introdução
 
-<<<<<<< HEAD
-Trabalho realizado na matéria de Trabalho Interdiscplinar de Aplicações Web, com o objetivo de manejar o tempo, visto a rotina extensa da maioria das pessoas. Em vista um dos grandes problemas da atualidade, a falta de tempo, nosso grupo realizou um projeto sobre gestão de tempo.
-=======
 Com o aumento da quantidade de tarefas diárias, tanto em ambientes profissionais quanto acadêmicos, muitas pessoas enfrentam dificuldades para organizar suas rotinas e manter a produtividade. A falta de planejamento pode gerar acúmulo de atividades, perda de prazos e aumento do estresse. Diante desse cenário, este projeto propõe o desenvolvimento de um aplicativo de gestão de tempo, com o objetivo de auxiliar usuários a organizarem melhor suas atividades, otimizando sua rotina e promovendo uma vida mais equilibrada.
 
 O aplicativo busca oferecer uma solução prática e acessível para problemas comuns relacionados à organização pessoal, como esquecimento de compromissos, procrastinação e baixa produtividade. A proposta é desenvolver uma ferramenta intuitiva e funcional, que atenda tanto estudantes quanto profissionais que buscam melhorar sua gestão do tempo.
