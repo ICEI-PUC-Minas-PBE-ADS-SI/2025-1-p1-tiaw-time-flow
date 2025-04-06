@@ -6,8 +6,7 @@
 ## Slides
 
 Coloque aqui o conjunto de slides.
-
-> O arquivo deve estar no formato PDF e conter a apresentação completa do projeto, abordando todos os itens trabalhados nos demais artefatos. 
+ <embed src="Apresentação Proposta Comercial Abstrato Azul.pdf" type="application/pdf" width="100%" height="600px">
 
 > **Links úteis**:
 > - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
