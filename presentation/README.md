@@ -6,7 +6,7 @@
 ## Slides
 
 Coloque aqui o conjunto de slides.
- <embed src="Apresentação Proposta Comercial Abstrato Azul.pdf" type="application/pdf" width="100%" height="600px">
+[Apresentacao.Proposta.Comercial.Abstrato.Azul.pdf](https://github.com/user-attachments/files/19623996/Apresentacao.Proposta.Comercial.Abstrato.Azul.pdf)
 
 > **Links úteis**:
 > - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
