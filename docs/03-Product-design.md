@@ -67,7 +67,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
 | RNF-001 | O sistema deverá estar disponível 24/7 para acesso contínuo.                          |  ALTO      |
 | RNF-002 | O sistema deverá ser responsivo, garantindo boa usabilidade tanto em desktops
-          quanto em dispositivos móveis.                                                          |  ALTO      |
+           quanto em dispositivos móveis.                                                          |  ALTO      |
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
