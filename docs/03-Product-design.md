@@ -55,19 +55,23 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
  ![alt text](<images/REQUISITOS NAO FUNCIONAIS.png>)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
+
 > Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
+- Requisitos funcionais
+(RF1): Criação de tarefas
+(RF2): Notificações e lembretes
+(RF3): Encerramento de tarefas
+(RF4): Categorização de tarefas
+(RF5): Vizualização de tarefas por data e prioridade
+(RF6): Criação de eventos com data e hora específicas
+(RF7): Relatório semanal do tempo gasto em cada categoria de tarefa
+(RF8): Definição de metas de produtividade e acompanhamento de progresso 
+(RF9): Sugestões de otimização de tempo com base nos hábitos do usuário
+
+- Requisitos não funcionais
+(RNF1): Disponibilidade do sistema 24/7
+(RNF2): Responsibilidade e usabilidade do sistema
 
 Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
 
@@ -82,7 +86,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 O projeto está restrito aos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
+|ID|                            Restrição                                            |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre ⚠️ EXEMPLO ⚠️ |
-|002| Não é permitido o desenvolvimento de um módulo de back-end  ⚠️ EXEMPLO ⚠️  |
+|001| O sistema deve ser desenvolvido utilizando React.js no front-end e Node.js no back-end.  |
+|002| A base de dados deverá ser armazenada em um banco SQL (PostgreSQL ou MySQL).    |

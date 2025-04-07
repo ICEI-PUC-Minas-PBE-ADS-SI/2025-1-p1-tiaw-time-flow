@@ -2,19 +2,17 @@
 
 Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
-⚠️ EXEMPLO ⚠️
 
-- BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
 
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
+- https://www.mestresdaweb.com.br/tecnologias/requisitos-funcionais-e-nao-funcionais-o-que-sao. 
+
+- https://www.pontotel.com.br/restricoes-de-um-projeto/#:~:text=As%20restri%C3%A7%C3%B5es%20de%20um%20projeto%20s%C3%A3o%20fatores%20limitantes%20que%20podem,%E2%80%9Crestri%C3%A7%C3%B5es%20de%20um%20projeto%E2%80%9D.
  
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+- https://blog.neoway.com.br/stakeholders/#:~:text=Enquanto%20stakeholder%20se%20refere%20aos,ou%20n%C3%A3o%20investir%20na%20empresa.
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
+- https://miro.com/pt/agile/o-que-e-historia-do-usuario/
 
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
 
 > **Links úteis**:
 > - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
