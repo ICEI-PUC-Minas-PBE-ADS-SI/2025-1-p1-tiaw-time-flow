@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+  
+/* Estilo geral */
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+  
+.pagina {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+/* Cabeçalho */
+.cabecalho {
+    background: #ffffff;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+}
+  
+.cabecalho h1 {
+    color: #0b4c9c;
+    font-size: 29px;
+}
+  
+.usuario-icone {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 29px;
+}
+  
+.data-hoje {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 32px;
+}
+  
+.botoes {
+    display: flex;
+    margin: 16px;
+    background: #e0e0e0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+  
+.botoes button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+  
+.botoes .planejamento {
+    background: #0b4c9c;
+    color: #fff;
+}
+  
+.tarefas {
+    padding: 0 24px 32px;
+}
+  
+.tarefas h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #000;
+}
+  
+
+.nova-tarefa {
+    width: 100%;
+    padding: 12px;
+    background: #0b4c9c;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
