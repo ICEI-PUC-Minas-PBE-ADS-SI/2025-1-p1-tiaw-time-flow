@@ -2,6 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
 }
 
 .header {
@@ -85,4 +92,12 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(22px);
+}
+
+.container {
+  width: 100%;
+  max-width: 390px; /* largura típica de celular */
+  min-height: 100vh;
+  border: 1px solid #ddd; /* só para visual em desktop */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }

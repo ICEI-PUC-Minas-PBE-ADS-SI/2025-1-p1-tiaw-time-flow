@@ -7,29 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-  <div class="header">
-    <div class="back" onclick="goBack()">←</div>
-    <h1>Notificações</h1>
-    <div class="profile">👤</div>
+    <div class="header">
+      <div class="back" onclick="goBack()">←</div>
+      <h1>Notificações</h1>
+      <div class="profile">👤</div>
+    </div>
+
+    <div class="toggle-section">
+      <label for="tarefas">Lembretes de Tarefas</label>
+      <label class="switch">
+        <input type="checkbox" id="tarefas" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggle-section">
+      <label for="calendario">Alertas de Calendário</label>
+      <label class="switch">
+        <input type="checkbox" id="calendario" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
   </div>
-
-  <div class="toggle-section">
-    <label for="tarefas">Lembretes de Tarefas</label>
-    <label class="switch">
-      <input type="checkbox" id="tarefas" checked>
-      <span class="slider"></span>
-    </label>
-  </div>
-
-  <div class="toggle-section">
-    <label for="calendario">Alertas de Calendário</label>
-    <label class="switch">
-      <input type="checkbox" id="calendario" checked>
-      <span class="slider"></span>
-    </label>
-  </div>
-
   <script src="script.js"></script>
 </body>
-</html>
