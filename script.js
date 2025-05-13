@@ -7,7 +7,6 @@ let dataSelecionada = new Date();
 
 const diasSemana = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
 
-// PERSISTÊNCIA: carrega do localStorage ao iniciar
 function carregarTarefas() {
   const salvas = localStorage.getItem("tarefasPorData");
   if (salvas) {
@@ -15,7 +14,6 @@ function carregarTarefas() {
   }
 }
 
-// PERSISTÊNCIA: salva no localStorage após alterações
 function salvarTarefas() {
   localStorage.setItem("tarefasPorData", JSON.stringify(tarefasPorData));
 }
@@ -140,25 +138,24 @@ function adicionarTarefaSemanal() {
   if (hora && descricao) {
     if (!tarefasPorData[chave]) tarefasPorData[chave] = [];
     tarefasPorData[chave].push({ hora, descricao, feita: false });
-    salvarTarefas(); // SALVA APÓS ADICIONAR
+    salvarTarefas(); 
     renderSemanal();
   }
 }
 
 function marcarFeita(chave, i) {
   tarefasPorData[chave][i].feita = !tarefasPorData[chave][i].feita;
-  salvarTarefas(); // SALVA APÓS ALTERAÇÃO
+  salvarTarefas(); 
   if (btnDiario.classList.contains("active")) renderDiario();
   else renderSemanal();
 }
 
 function excluirTarefa(chave, i) {
   tarefasPorData[chave].splice(i, 1);
-  salvarTarefas(); // SALVA APÓS EXCLUSÃO
+  salvarTarefas(); 
   if (btnDiario.classList.contains("active")) renderDiario();
   else renderSemanal();
 }
 
-// Carrega as tarefas salvas e inicia com o modo diário
 carregarTarefas();
 renderDiario();
