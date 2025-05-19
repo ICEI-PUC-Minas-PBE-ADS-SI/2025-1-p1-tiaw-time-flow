@@ -28,8 +28,39 @@
   </div>
 </div>
 
+<!-- Modal para editar tarefa -->
+<div id="edit-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Editar Tarefa</h2>
+    <form id="edit-form">
+      <label for="edit-time">Horário:</label>
+      <input type="time" id="edit-time" required>
+      <label for="edit-name">Nome:</label>
+      <input type="text" id="edit-name" required>
+      <div class="modal-buttons">
+        <button type="submit" class="save-btn">Salvar</button>
+        <button type="button" id="cancel-btn" class="cancel-btn">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-
+<!-- Modal para adicionar nova tarefa -->
+<div id="add-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Nova Tarefa</h2>
+    <form id="add-form">
+      <label for="add-time">Horário:</label>
+      <input type="time" id="add-time" required>
+      <label for="add-name">Nome:</label>
+      <input type="text" id="add-name" required>
+      <div class="modal-buttons">
+        <button type="submit" class="save-btn">Adicionar</button>
+        <button type="button" id="cancel-add-btn" class="cancel-btn">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 
 <script src="script.js"></script>
