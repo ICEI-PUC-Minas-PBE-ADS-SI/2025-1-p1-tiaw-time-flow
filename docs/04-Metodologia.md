@@ -69,11 +69,32 @@ Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e 
 
 ### Ferramentas
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+No projeto Time Flow, usamos várias ferramentas para facilitar o trabalho da equipe e garantir um bom resultado. A seguir, listamos as principais ferramentas e por que foram escolhidas:
 
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
+Editor de Código: Visual Studio Code (VS Code)
+Usamos o VS Code para escrever o código do aplicativo porque ele é fácil de usar, suporta muitas linguagens de programação e ajuda a equipe a trabalhar junta, já que tem integração com o Git.
 
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+Comunicação: WhatsApp e Discord
+Para conversar e tirar dúvidas rapidamente, usamos o WhatsApp e o Discord. O WhatsApp é bom para mensagens rápidas, e o Discord também permite falar por voz e organizar conversas em canais, o que ajuda na organização da equipe.
+
+Diagramação e Design: Miro e Figma
+
+O Miro foi usado para fazer brainstorms e organizar ideias no começo do projeto.
+
+O Figma foi a ferramenta para criar o design e o protótipo da interface do aplicativo, porque permite que todos os membros trabalhem juntos online e visualizem o layout interativo.
+
+Hospedagem e Controle de Código: GitHub
+O código do aplicativo está no GitHub, que ajuda a guardar as versões diferentes do código, evitar erros e permite que todos trabalhem ao mesmo tempo sem problemas. Também usamos o GitHub para guardar documentos do projeto e controlar as tarefas por meio do GitHub Projects.
+
+| Ferramenta         | Para que foi usada                                     |
+| ------------------ | ------------------------------------------------------ |
+| Visual Studio Code | Escrever o código do aplicativo                        |
+| WhatsApp           | Comunicação rápida entre os membros                    |
+| Discord            | Comunicação por texto e voz, organização das conversas |
+| Miro               | Organizar ideias e fazer brainstorms                   |
+| Figma              | Criar o design e protótipos da interface               |
+| GitHub             | Guardar o código, documentos e controlar as tarefas    |
+
 
 ### Relação de Ambientes de Trabalho
 
