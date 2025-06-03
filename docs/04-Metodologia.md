@@ -15,32 +15,11 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A r
 
 ## Controle de versão
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+No projeto Time Flow, o grupo trabalhou com seis branches, cada uma nomeada com o nome de um integrante da equipe. Essa organização foi adotada para que cada membro pudesse desenvolver uma parte específica do aplicativo de forma independente e sem conflitos.
 
-A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
+Essa divisão por branches permitiu que cada participante focasse em suas responsabilidades, facilitando o desenvolvimento paralelo e a colaboração. Ao final do processo, todas as branches serão integradas (mescladas) para formar a versão completa do aplicativo. Após essa união, a equipe fará as correções e ajustes necessários para garantir a qualidade e a padronização do sistema.
 
-O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
-
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+Apesar do uso das branches, o grupo ainda não utilizou tags no repositório para marcar versões específicas do projeto. Para as próximas etapas, iremoas incrementar adoção das tags, pois elas ajudam a identificar versões estáveis e marcos importantes no desenvolvimento.
 
 ## Planejamento do projeto
 
