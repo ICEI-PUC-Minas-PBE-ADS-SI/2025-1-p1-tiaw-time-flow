@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sons e Música Ambiente</title>
+  <link rel="stylesheet" href="style-sprint2.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <h1>🔊 Sons e Música Ambiente</h1>
+
+    <h2>Música Ambiente</h2>
+    <p>Escolha uma música de fundo para ajudar na concentração durante suas tarefas.</p>
+
+    <ul>
+      <li><span>🌿 Sons da Natureza</span> <button onclick="playSound('audios/natureza.mp3', true)">▶️</button></li>
+      <li><span>🌹 Piano Suave</span> <button onclick="playSound('audios/piano.mp3', true)">▶️</button></li>
+      <li><span>🌊 Som do Mar</span> <button onclick="playSound('audios/mar.mp3', true)">▶️</button></li>
+      <li><span>🚫 Nenhum</span> <button onclick="stopSound()">⛔</button></li>
+    </ul>
+
+    <h2>Som de Notificação</h2>
+    <p>Escolha um som para alertar você sobre suas tarefas.</p>
+
+    <ul>
+      <li><span>🔔 Clássico</span> <button onclick="playSound('audios/notif-classico.mp3')">▶️</button></li>
+      <li><span>💤 Suave</span> <button onclick="playSound('audios/notif-suave.mp3')">▶️</button></li>
+      <li><span>💧 Sutil</span> <button onclick="playSound('audios/notif-sutil.mp3')">▶️</button></li>
+      <li><span>🔕 Silencioso</span> <button onclick="stopSound()">⛔</button></li>
+    </ul>
+
+    <h3>🎵 Escolher áudio do seu dispositivo:</h3>
+    <input type="file" id="fileInput" accept="audio/*" />
+    <button onclick="playUserAudio()">▶️ Tocar selecionado</button>
+
+    <h3>🔖 Salvar configurações:</h3>
+    <button onclick="salvarConfiguracao()">📀 Salvar escolha</button>
+
+    <h2 style="margin-top: 30px;">Pesquise uma música para escutar:</h2>
+    <input type="text" id="spotifySearch" placeholder="Digite o nome da música" />
+    <button onclick="tocarSpotify()">▶️ Tocar agora</button>
+
+    <div id="youtubePlayer" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="script-sprint2.js"></script>
+</body>
+
+</html>
