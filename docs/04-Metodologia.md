@@ -75,12 +75,19 @@ Liste todas as ferramentas que foram empregadas no projeto, justificando a escol
 
 ⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
-| Ambiente                            | Plataforma                         | Link de acesso                       |
-|-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
+| Ambiente                            | Plataforma                         | 
+|-------------------------------------|------------------------------------|
+| Processo de Design Thinking         | Miro                               | 
+
+https://miro.com/welcomeonboard/Uy8xYlB1OEUyd1lWUjlWNExYQXRScUNKYStieWVmbG1HMDVLc2p4TFQ5UjNrb2gxVkFYZlZEUjUzYVpvUUtWVjNNVWNKOHhSUmIwR0ZXYnc4NVZZcW5mamYvSUh0bTdPamw0ZEpTZXN2NDJVWGU5cThYbVRyY0cyWWdWODRVRUdzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=571888465641   
+https://miro.com/welcomeonboard/TDZaektJTGwvcm9ONGdZZDFrc3ZSVGdnTWlaMHZpTk51c0MvcEh5TC9VWlNRR1ZENXR6ZU5KVkNaREF6TGZ0MnptVmhxU3RBNEdzZWk5S3g0Tm1LS0hmamYvSUh0bTdPamw0ZEpTZXN2NDBUNlcyTEtaVGc3b1JQTlBtVHhUZU10R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=735008858013
+https://miro.com/welcomeonboard/UVZjWmY0QkhlMldHSXlkOXdsYnAycEpETkRGTWJIeGVaNUN2SHlpNktxSFdPc01TdzNBRm01K1J2ZHBqVy9NMTFVbDIxem9SZVJEMlc5NU82NEc1U1hmamYvSUh0bTdPamw0ZEpTZXN2NDFLRWJFRlVqZXkxYU81Q2lUQUFJNWZBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=945549142482
+https://miro.com/welcomeonboard/NmMrUW1RTTdWVjhHM0tleU1xdmh6M2lpR1hLNWg2bkQwUGcwUzF6Mk9seTlNS2VwSTF6L1NublhHWGxpT0hqMGZsTGMvb3d5ZDJZSy8vREZwWkQvTkhmamYvSUh0bTdPamw0ZEpTZXN2NDEyOXZaaFhRN3dPYUd3NHBDK3FlendBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=697302337434
+
+| Repositório de código fonte         | GitHub                             | 
+
+| Documentos do projeto               | GitHub                             | 
+| Gerenciamento do projeto            | GitHub Projects                    | 
+| Projeto de interface                | Figma                              |
+| Hospedagem                          | Vercel                             | 
  
