@@ -15,9 +15,9 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A r
 
 ## Controle de versão
 
-No projeto Time Flow, o grupo trabalhou com seis branches, cada uma nomeada com o nome de um integrante da equipe. Essa organização foi adotada para que cada membro pudesse desenvolver uma parte específica do aplicativo de forma independente e sem conflitos.
+No projeto Time Flow, o grupo utilizou seis branches, cada uma nomeada com o nome de um integrante da equipe. Essa estratégia permitiu que cada membro trabalhasse em uma parte específica do aplicativo de forma independente, facilitando o desenvolvimento paralelo e evitando conflitos no código.
 
-Essa divisão por branches permitiu que cada participante focasse em suas responsabilidades, facilitando o desenvolvimento paralelo e a colaboração. Ao final do processo, todas as branches serão integradas (mescladas) para formar a versão completa do aplicativo. Após essa união, a equipe fará as correções e ajustes necessários para garantir a qualidade e a padronização do sistema.
+Ao final do desenvolvimento individual, todas as seis branches serão unidas (mergeadas) na branch main, que representa a versão estável e consolidada do projeto. Após essa integração, a equipe realizará os ajustes e correções necessárias para garantir que o aplicativo funcione corretamente e esteja padronizado.
 
 Apesar do uso das branches, o grupo ainda não utilizou tags no repositório para marcar versões específicas do projeto. Para as próximas etapas, iremoas incrementar adoção das tags, pois elas ajudam a identificar versões estáveis e marcos importantes no desenvolvimento.
 
