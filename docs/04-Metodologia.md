@@ -1,8 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
-
 A equipe do projeto Time Flow trabalhou de forma colaborativa, dividindo o desenvolvimento do aplicativo entre todos os membros. Cada integrante ficou responsável por uma parte específica do aplicativo, sem separação fixa entre back-end ou front-end.
 
 Para manter um visual padrão, o grupo criou um arquivo prévio de estilo (style.css), que servirá como base para o layout. Ao final do desenvolvimento de todas as partes, a equipe vai revisar e unificar o CSS, garantindo que o aplicativo fique com um design padronizado e consistente.
