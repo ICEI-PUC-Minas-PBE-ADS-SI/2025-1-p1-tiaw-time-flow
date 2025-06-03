@@ -3,7 +3,13 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+A equipe do projeto Time Flow trabalhou de forma colaborativa, dividindo o desenvolvimento do aplicativo entre todos os membros. Cada integrante ficou responsável por uma parte específica do aplicativo, sem separação fixa entre back-end ou front-end.
+
+Para manter um visual padrão, o grupo criou um arquivo prévio de estilo (style.css), que servirá como base para o layout. Ao final do desenvolvimento de todas as partes, a equipe vai revisar e unificar o CSS, garantindo que o aplicativo fique com um design padronizado e consistente.
+
+O grupo adotou práticas da metodologia ágil Scrum, realizando reuniões semanais (sprints) para revisar o andamento, ajustar prazos e planejar os próximos passos. A comunicação é feita por WhatsApp e Discord, permitindo que todos acompanhem as decisões e tirem dúvidas com facilidade.
+
+O código-fonte do aplicativo é armazenado e controlado em um repositório no GitHub, o que garante organização, segurança e permite que todos os membros trabalhem de forma colaborativa sem sobrescrever o trabalho uns dos outros.
 
 ## Relação de ambientes de trabalho
 
