@@ -86,6 +86,8 @@ https://miro.com/welcomeonboard/NmMrUW1RTTdWVjhHM0tleU1xdmh6M2lpR1hLNWg2bkQwUGcw
 
 | Repositório de código fonte         | GitHub                             | 
 
+https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow.git
+
 | Documentos do projeto               | GitHub                             | 
 | Gerenciamento do projeto            | GitHub Projects                    | 
 | Projeto de interface                | Figma                              |
