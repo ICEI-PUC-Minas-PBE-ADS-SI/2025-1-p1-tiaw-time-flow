@@ -28,7 +28,7 @@ Apesar do uso das branches, o grupo ainda não utilizou tags no repositório par
 - Scrum Master: Vitor Cesar Arruda Xavier
 - Product Owner: Christian Fernandes Herculano Alberto.
 - Equipe de Desenvolvimento: Caio Moraes da Silva, Christian Fernandes Herculano Albeto, Geovanna Duarte, Gustavo Ribeiro Pena, Maria Clara Henrique Souza, Vitor Cesar Arruda Xavier.
-- Equipe de Design: Caio Moraes da Silva, Gustavo Ribeiro Pena
+- Equipe de Design:  Caio Moraes da Silva, Christian Fernandes Herculano Albeto, Geovanna Duarte, Gustavo Ribeiro Pena, Maria Clara Henrique Souza, Vitor Cesar Arruda Xavier.
 
 ### Processo
 
