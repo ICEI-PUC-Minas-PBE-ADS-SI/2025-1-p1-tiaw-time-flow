@@ -50,19 +50,19 @@ Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e 
 
 No projeto Time Flow, usamos várias ferramentas para facilitar o trabalho da equipe e garantir um bom resultado. A seguir, listamos as principais ferramentas e por que foram escolhidas:
 
-Editor de Código: Visual Studio Code (VS Code)
+-Editor de Código: Visual Studio Code (VS Code)
 Usamos o VS Code para escrever o código do aplicativo porque ele é fácil de usar, suporta muitas linguagens de programação e ajuda a equipe a trabalhar junta, já que tem integração com o Git.
 
-Comunicação: WhatsApp e Discord
+-Comunicação: WhatsApp e Discord
 Para conversar e tirar dúvidas rapidamente, usamos o WhatsApp e o Discord. O WhatsApp é bom para mensagens rápidas, e o Discord também permite falar por voz e organizar conversas em canais, o que ajuda na organização da equipe.
 
-Diagramação e Design: Miro e Figma
+-Diagramação e Design: Miro e Figma
 
 O Miro foi usado para fazer brainstorms e organizar ideias no começo do projeto.
 
 O Figma foi a ferramenta para criar o design e o protótipo da interface do aplicativo, porque permite que todos os membros trabalhem juntos online e visualizem o layout interativo.
 
-Hospedagem e Controle de Código: GitHub
+-Hospedagem e Controle de Código: GitHub
 O código do aplicativo está no GitHub, que ajuda a guardar as versões diferentes do código, evitar erros e permite que todos trabalhem ao mesmo tempo sem problemas. Também usamos o GitHub para guardar documentos do projeto e controlar as tarefas por meio do GitHub Projects.
 
 | Ferramenta         | Para que foi usada                                     |
