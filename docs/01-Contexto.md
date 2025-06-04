@@ -4,9 +4,6 @@ Com o aumento da quantidade de tarefas diárias, tanto em ambientes profissionai
 
 O aplicativo busca oferecer uma solução prática e acessível para problemas comuns relacionados à organização pessoal, como esquecimento de compromissos, procrastinação e baixa produtividade. A proposta é desenvolver uma ferramenta intuitiva e funcional, que atenda tanto estudantes quanto profissionais que buscam melhorar sua gestão do tempo.
 
-O público-alvo inclui usuários com diferentes níveis de familiaridade com tecnologia, mas que compartilham o interesse em melhorar sua organização e produtividade diária.
->>>>>>> d32e24a6d55c29cd96fe294bf25465209243b7be
-
 ## Problema
 
 Em um contexto de vida cada vez mais acelerada, muitas pessoas têm dificuldade em administrar seu tempo de forma eficaz. Isso afeta negativamente tanto a produtividade quanto a saúde mental, devido ao estresse causado pela desorganização e pelo acúmulo de tarefas. A ausência de métodos eficientes para planejar, priorizar e acompanhar atividades contribui para a perda de prazos, aumento de retrabalho e baixa eficiência no cumprimento de metas.
