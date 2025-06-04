@@ -64,7 +64,7 @@ Durante o desenvolvimento, usamos o **Scrum**, que é um jeito ágil de organiza
 
 🔗 [Acesse o GitHub Projects do Time Flow](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)
 
-### Ferramentas
+# Ferramentas
 
 No projeto Time Flow, usamos várias ferramentas para facilitar o trabalho da equipe e garantir um bom resultado. A seguir, listamos as principais ferramentas e por que foram escolhidas:
 
