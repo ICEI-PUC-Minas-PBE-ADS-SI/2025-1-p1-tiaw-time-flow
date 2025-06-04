@@ -63,6 +63,7 @@ Durante o desenvolvimento, usamos o **Scrum**, que é um jeito ágil de organiza
 - Para organizar as tarefas, usamos o **GitHub Projects**, com um quadro Kanban dividido em colunas como **Backlog**, **To Do**, **In Progress** e **Done**. Isso facilitou muito a visualização das atividades e a divisão de responsabilidades.
 
 🔗 [Acesse o GitHub Projects do Time Flow](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)
+![image](https://github.com/user-attachments/assets/f25a5bd1-cbd7-4afe-a9ae-301d13dacd4c)
 
 # Ferramentas
 
