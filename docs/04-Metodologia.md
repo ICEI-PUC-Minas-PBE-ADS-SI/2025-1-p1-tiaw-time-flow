@@ -36,6 +36,8 @@ Apesar do uso das branches, o grupo ainda não utilizou tags no repositório par
 
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
 
+[GitHub Projects]([https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow/projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)) |
+
 Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
  
 > **Links úteis**:
@@ -82,7 +84,7 @@ O código do aplicativo está no GitHub, que ajuda a guardar as versões diferen
 | Processo de Design Thinking        | Miro                               | [Link 1](https://miro.com/welcomeonboard/Uy8xYlB1OEUyd1lWUjlWNExYQXRScUNKYStieWVmbG1HMDVLc2p4TFQ5UjNrb2gxVkFYZlZEUjUzYVpvUUtWVjNNVWNKOHhSUmIwR0ZXYnc4NVZZcW5mamYvSUh0bTdPamw0ZEpTZXN2NDJVWGU5cThYbVRyY0cyWWdWODRVRUdzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=), [Link 2](https://miro.com/welcomeonboard/TDZaektJTGwvcm9ONGdZZDFrc3ZSVGdnTWlaMHZpTk51c0MvcEh5TC9VWlNRR1ZENXR6ZU5KVkNaREF6TGZ0MnptVmhxU3RBNEdzZWk5S3g0Tm1LS0hmamYvSUh0bTdPamw0ZEpTZXN2NDBUNlcyTEtaVGc3b1JQTlBtVHhUZU10R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=), [Link 3](https://miro.com/welcomeonboard/UVZjWmY0QkhlMldHSXlkOXdsYnAycEpETkRGTWJIeGVaNUN2SHlpNktxSFdPc01TdzNBRm01K1J2ZHBqVy9NMTFVbDIxem9SZVJEMlc5NU82NEc1U1hmamYvSUh0bTdPamw0ZEpTZXN2NDFLRWJFRlVqZXkxYU81Q2lUQUFJNWZBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=), [Link 4](https://miro.com/welcomeonboard/NmMrUW1RTTdWVjhHM0tleU1xdmh6M2lpR1hLNWg2bkQwUGcwUzF6Mk9seTlNS2VwSTF6L1NublhHWGxpT0hqMGZsTGMvb3d5ZDJZSy8vREZwWkQvTkhmamYvSUh0bTdPamw0ZEpTZXN2NDEyOXZaaFhRN3dPYUd3NHBDK3FlendBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=) |
 | Repositório de código-fonte        | GitHub                             | [Repositório Time Flow](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow.git) |
 | Documentos do projeto              | GitHub                             | [Docs do Projeto](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow/tree/main/docs) |
-| Gerenciamento do projeto           | GitHub Projects                    | [GitHub Projects](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow/projects) |
+| Gerenciamento do projeto           | GitHub Projects                    | [GitHub Projects]([https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-time-flow/projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)) |
 | Projeto de interface               | Figma                              | [Protótipo no Figma](https://www.figma.com/design/6XQFY8oyfAkyrj5PYyrovW/prot%C3%B3tipo-interativo?node-id=1-2&p=f&t=nzNWVlxmex5fje6O-0) |
 
 
