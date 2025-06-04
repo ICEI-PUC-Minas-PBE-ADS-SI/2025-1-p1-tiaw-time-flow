@@ -24,6 +24,8 @@
 ![alt text](<images/Persona3.png>)
 
 ### Links do Miro
-[Matriz CSD e Mapa de stakeholders](https://miro.com/app/board/uXjVIXQgrqA=/)
-[Entrevistas qualitativas e Highlights de pesquisa](https://miro.com/app/board/uXjVIT43YvI=/)
-[Personas](https://miro.com/app/board/uXjVIPrSoeA=/)
+| Tópico                                            | Links de acesso                                                                 |
+|---------------------------------------------------|----------------------------------------------------------------------|
+| Matriz CSD e Mapa de Stakeholders                | [Acessar Miro](https://miro.com/app/board/uXjVIXQgrqA=/)             |
+| Entrevistas Qualitativas e Highlights de Pesquisa | [Acessar Miro](https://miro.com/app/board/uXjVIT43YvI=/)             |
+| Personas                                          | [Acessar Miro](https://miro.com/app/board/uXjVIPrSoeA=/)             |
