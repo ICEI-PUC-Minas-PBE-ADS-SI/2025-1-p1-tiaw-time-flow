@@ -30,23 +30,44 @@ Apesar do uso das branches, o grupo ainda não utilizou tags no repositório par
 - Equipe de Desenvolvimento: Caio Moraes da Silva, Christian Fernandes Herculano Albeto, Geovanna Duarte, Gustavo Ribeiro Pena, Maria Clara Henrique Souza, Vitor Cesar Arruda Xavier.
 - Equipe de Design:  Caio Moraes da Silva, Christian Fernandes Herculano Albeto, Geovanna Duarte, Gustavo Ribeiro Pena, Maria Clara Henrique Souza, Vitor Cesar Arruda Xavier.
 
-### Processo
+## Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+O grupo **Time Flow** seguiu duas abordagens para desenvolver o aplicativo: **Design Thinking** e **Scrum**. Isso ajudou a entender bem o problema e organizar o trabalho da melhor forma.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
+### Design Thinking
 
-[GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)
+No começo do projeto, usamos o Design Thinking para pensar na melhor solução para os usuários. Esse método ajuda a criar ideias focadas nas pessoas que vão usar o aplicativo. Passamos por cinco etapas:
 
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+- **Imersão**: Pesquisamos e conversamos sobre os problemas de organização de tempo enfrentados por estudantes e profissionais. A ideia era entender melhor o que as pessoas realmente precisam.
+
+- **Definição**: Juntamos as informações e definimos os principais desafios a resolver, como criar uma rotina mais organizada, mandar lembretes e ajudar no controle de produtividade.
+
+- **Ideação**: Fizemos sessões de brainstorming no **Miro** para pensar em ideias e funcionalidades úteis que o aplicativo poderia ter.
+
+- **Prototipagem**: Com as melhores ideias, criamos protótipos no **Figma**, desenhando as telas e mostrando como o app funcionaria.
+
+- **Testes**: Mostramos o protótipo para alguns usuários e colegas. Eles deram sugestões e, com esse feedback, fizemos melhorias no design e nas funções.
+
+### Scrum
+
+Durante o desenvolvimento, usamos o **Scrum**, que é um jeito ágil de organizar o trabalho em equipe. Funcionou assim:
+
+- Fizemos **sprints semanais**, ou seja, reuniões toda semana para planejar, dividir tarefas e ver o que já foi feito.
+
+- O **Scrum Master** foi o *Vitor Cesar*, que ajudou a equipe a seguir o método certo e resolver problemas.
+
+- O **Product Owner** foi o *Christian*, que cuidou da visão do aplicativo e garantiu que ele atendesse às necessidades dos usuários.
+
+- Toda a equipe participou das reuniões, decidindo juntas o que fazer e acompanhando o progresso do projeto.
+
+- Para organizar as tarefas, usamos o **GitHub Projects**, com um quadro Kanban dividido em colunas como **Backlog**, **To Do**, **In Progress** e **Done**. Isso facilitou muito a visualização das atividades e a divisão de responsabilidades.
+
+🔗 [Acesse o GitHub Projects do Time Flow](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/48)
+
+---
+
+Essa união entre **Design Thinking** e **Scrum** ajudou o grupo a criar um aplicativo útil, bem planejado e feito de forma colaborativa.
+
 
 ### Ferramentas
 
