@@ -23,3 +23,7 @@
 ![alt text](<images/Persona2.png>)
 ![alt text](<images/Persona3.png>)
 
+### Links do Miro
+[Matriz CSD e Mapa de stakeholders] (https://miro.com/app/board/uXjVIXQgrqA=/)
+[Entrevistas qualitativas e Highlights de pesquisa] (https://miro.com/app/board/uXjVIT43YvI=/)
+[Personas] (https://miro.com/app/board/uXjVIPrSoeA=/)
