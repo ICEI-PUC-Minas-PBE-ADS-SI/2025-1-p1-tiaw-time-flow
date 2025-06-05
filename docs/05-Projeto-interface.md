@@ -48,8 +48,9 @@
 
 
 <video width="560" height="315" controls>
-  <source src="images/iframe.mp4" type="video/mp4">
+  <source src="images/Iframe.mp4" type="video/mp4">
 </video>
+<iframe width="560" height="315" src="images/Iframe.mp4" frameborder="0" allowfullscreen></iframe>
 
 
 
