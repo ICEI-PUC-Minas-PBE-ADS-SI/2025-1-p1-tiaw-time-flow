@@ -85,14 +85,14 @@ O Figma foi a ferramenta para criar o design e o protótipo da interface do apli
 O código do aplicativo está no GitHub, que ajuda a guardar as versões diferentes do código, evitar erros e permite que todos trabalhem ao mesmo tempo sem problemas. Também usamos o GitHub para guardar documentos do projeto e controlar as tarefas por meio do GitHub Projects.
 
 | Ferramenta         | Para que foi usada                                     |
-| ------------------ | ------------------------------------------------------ |
+|--------------------|--------------------------------------------------------|
 | Visual Studio Code | Escrever o código do aplicativo                        |
 | WhatsApp           | Comunicação rápida entre os membros                    |
 | Discord            | Comunicação por texto e voz, organização das conversas |
 | Miro               | Organizar ideias e fazer brainstorms                   |
 | Figma              | Criar o design e protótipos da interface               |
 | GitHub             | Guardar o código, documentos e controlar as tarefas    |
-
+| Git                | Controlar versões do código, permitindo rastrear mudanças e colaborar em equipe |
 
 ### Relação de Ambientes de Trabalho
 
