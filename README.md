@@ -6,7 +6,17 @@
 
 `1º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+Objetivo Geral: Desenvolver um aplicativo de gestão de tempo que auxilie usuários na organização de suas rotinas, promovendo o aumento da produtividade e o equilíbrio entre as tarefas pessoais e profissionais.
+
+Objetivos Específicos:
+
+Criar um sistema de planejamento de tarefas com alertas e lembretes personalizados.
+
+Implementar recursos de categorização e priorização de atividades.
+
+Desenvolver relatórios e métricas que permitam ao usuário acompanhar sua evolução e identificar padrões de produtividade.
+
+A escolha por desenvolver um aplicativo de gestão de tempo se baseia na crescente demanda por soluções que ajudem as pessoas a lidarem com a sobrecarga de tarefas do cotidiano. Em um mundo conectado, onde o tempo é um recurso cada vez mais escasso, ferramentas eficazes de organização pessoal se tornam essenciais. Além disso, essa é uma área que possibilita a aplicação de conceitos de usabilidade e acessibilidade digital,integração com calendários e notificações, e até gamificação, o que enriquece o processo de desenvolvimento. Por meio de entrevistas com potenciais usuários e análises de ferramentas já existentes no mercado, foi possível identificar carências específicas que este projeto buscará atender de forma personalizada.
 
 ## Integrantes
 
