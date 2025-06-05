@@ -1,8 +1,4 @@
-# Product discovery
-
 ## Etapa de entendimento
-
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
 
  ### Matriz CSD e Mapa de stakeholders :
  ![alt text](<images/MatrizCSD-MapaStakeholders.png>)
@@ -17,8 +13,6 @@
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
 ![alt text](<images/Persona1.png>)
 ![alt text](<images/Persona2.png>)
 ![alt text](<images/Persona3.png>)
@@ -28,4 +22,4 @@
 |---------------------------------------------------|----------------------------------------------------------------------|
 | Matriz CSD e Mapa de Stakeholders                | [Acessar Miro](https://miro.com/app/board/uXjVIXQgrqA=/)             |
 | Entrevistas Qualitativas e Highlights de Pesquisa | [Acessar Miro](https://miro.com/app/board/uXjVIT43YvI=/)             |
-| Personas                                          | [Acessar Miro](https://miro.com/app/board/uXjVIPrSoeA=/)             |
+| Personas                                          | [Acessar Miro](https://miro.com/app/board/uXjVIPrSoeA=/)             | 
