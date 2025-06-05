@@ -46,7 +46,7 @@
 
 ### Protótipo Interativo
 
+<video controls src="images/Iframe.mp4" title="Iframe"></video>
 
-<iframe src=”docs/images/Iframe.mp4” allow=”accelerometer; fullscreen; gyroscope; midi”> </iframe>
 
 ✅ [Protótipo interativo](https://www.figma.com/proto/6XQFY8oyfAkyrj5PYyrovW/protótipo-interativo?node-id=1-2&t=Ahj1ocssFcL21f0l-1)  
