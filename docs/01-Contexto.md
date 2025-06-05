@@ -1,4 +1,4 @@
-## 📌 Introdução
+##  Introdução
 
 Com o aumento da quantidade de tarefas diárias, tanto em ambientes profissionais quanto acadêmicos, muitas pessoas enfrentam dificuldades para organizar suas rotinas e manter a produtividade. A falta de planejamento pode gerar acúmulo de atividades, perda de prazos e aumento do estresse.
 
@@ -10,7 +10,7 @@ O aplicativo busca oferecer uma solução prática e acessível para problemas c
 
 ---
 
-## ❗ Problema
+##  Problema
 
 Em um contexto de vida cada vez mais acelerada, muitas pessoas têm dificuldade em administrar seu tempo de forma eficaz. Isso afeta negativamente tanto a **produtividade** quanto a **saúde mental**, devido ao estresse causado pela desorganização e pelo acúmulo de tarefas.
 
@@ -22,7 +22,7 @@ A aplicação será utilizada de forma pessoal, em ambientes variados (trabalho,
 
 ---
 
-## 🎯 Objetivos
+##  Objetivos
 
 ### Objetivo Geral
 
@@ -36,7 +36,7 @@ Desenvolver um **aplicativo de gestão de tempo** que auxilie usuários na organ
 
 ---
 
-## 💡 Justificativa
+##  Justificativa
 
 A escolha por desenvolver um aplicativo de gestão de tempo se baseia na crescente demanda por soluções que ajudem as pessoas a lidarem com a sobrecarga de tarefas do cotidiano. Em um mundo conectado, onde o tempo é um recurso cada vez mais escasso, **ferramentas eficazes de organização pessoal se tornam essenciais**.
 
@@ -46,7 +46,7 @@ Por meio de entrevistas com potenciais usuários e análises de ferramentas já 
 
 ---
 
-## 👥 Público-alvo
+##  Público-alvo
 
 O público-alvo do aplicativo é composto por:
 
