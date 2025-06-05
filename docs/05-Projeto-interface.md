@@ -18,19 +18,64 @@ Fluxo geral da navegação do usuário nas principais funcionalidades do sistema
 
 Apresentação das principais telas da aplicação:
 
-| Tela | Descrição |
-|------|-----------|
-| ![Tela de carregamento](images/Logo.png) | Tela de carregamento ao abrir o aplicativo |
-| ![Tela de login](images/Tela%20login.png) | Tela de login do usuário |
-| ![Tela de cadastro](images/cadastro.png) | Tela de cadastro de novos usuários |
-| ![Home-page](images/Home-page.png) | Tela inicial com o menu principal |
-| ![Planejamento semanal](images/Planejamento-semanal.png) | Visualização do planejamento semanal de tarefas |
-| ![Sons e músicas](images/Sons%20e%20m%C3%BAsica.png) | Tela para configurar sons e músicas ambientes |
-| ![Perfil do usuário](images/usu%C3%A1rio.png) | Configurações do perfil, tarefas e dados pessoais |
-| ![Notificações](images/notifica%C3%A7%C3%B5es.png) | Configuração de notificações personalizadas |
-| ![Cronômetro](images/cronometro.png) | Tela com cronômetro de atividades |
-| ![Metas](images/metas.png) | Criação e gerenciamento de metas pessoais |
-| ![Avaliação](images/avaliacao.png) | Avaliação do aplicativo (até 5 estrelas) |
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+  <div align="center">
+    <img src="images/Logo.png" width="300"/><br/>
+    <strong>Tela de carregamento</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/Tela%20login.png" width="300"/><br/>
+    <strong>Login</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/cadastro.png" width="300"/><br/>
+    <strong>Cadastro</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/Home-page.png" width="300"/><br/>
+    <strong>Home</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/Planejamento-semanal.png" width="300"/><br/>
+    <strong>Planejamento semanal</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/Sons%20e%20m%C3%BAsica.png" width="300"/><br/>
+    <strong>Sons e músicas</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/usu%C3%A1rio.png" width="300"/><br/>
+    <strong>Perfil do usuário</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/notifica%C3%A7%C3%B5es.png" width="300"/><br/>
+    <strong>Notificações</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/cronometro.png" width="300"/><br/>
+    <strong>Cronômetro</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/metas.png" width="300"/><br/>
+    <strong>Metas</strong>
+  </div>
+
+  <div align="center">
+    <img src="images/avaliacao.png" width="300"/><br/>
+    <strong>Avaliação</strong>
+  </div>
+
+</div>
 
 ---
 
