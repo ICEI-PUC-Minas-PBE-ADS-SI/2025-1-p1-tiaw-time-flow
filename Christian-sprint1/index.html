@@ -1,40 +1,32 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criar Conta</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avaliação</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
-    <a href="#" class="voltar">&#8592;</a>
-    <h1>Criar Conta</h1>
-    <form id="formCadastro">
-      <input type="text" id="nome" placeholder="Nome*" required>
-      <input type="email" id="email" placeholder="E-mail*" required>
+    <div class="top-bar">
+      <button id="back-button">←</button>
+    </div>
+    <h1>Qual a sua<br>avaliação?</h1>
+    
+    <div class="stars" id="stars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
 
-      
-      <input type="password" id="senha" placeholder="Senha*" required>
+    <div id="buttons" class="buttons hidden">
+      <button id="cancel-button" class="btn cancel">CANCELAR</button>
+      <button id="confirm-button" class="btn confirm">CONFIRMAR</button>
+    </div>
 
-      <!-- Confirmar Senha -->
-      <input type="password" id="confirmarSenha" placeholder="Confirmar Senha*" required>
-
-      <!-- Mensagem de erro se caso errar a senha -->
-      <div id="mensagemErro" style="color: red; margin-top: 10px;"></div>
-      
-
-      <!-- Foto de perfil -->
-      <div class="imagem-container" style="position: relative; width: 100%; height: 200px; margin-top: 15px;">
-        <img id="preview" src="" alt="Imagem de perfil" style="display: none;">
-        <label for="imagemInput" class="upload-area" style="width: 100%; height: 100%; border: 2px dashed #ccc; display: flex; justify-content: center; align-items: center; cursor: pointer;">
-          <span class="icone" style="font-size: 40px;">&#128247;</span>
-          <input type="file" id="imagemInput" accept="image/*" style="display: none;">
-        </label>
-      </div>
-
-      <button type="submit" style="margin-top: 20px;">Cadastrar</button>
-    </form>
+    <p><strong>Avaliar o app é importante porque ajuda a melhorar a experiência de todos os usuários. Com a sua opinião, os desenvolvedores conseguem identificar pontos fortes e o que precisa ser ajustado. Além disso, boas avaliações aumentam a visibilidade do app e incentivam melhorias contínuas. Sua avaliação faz a diferença!</strong></p>
   </div>
 
   <script src="script.js"></script>

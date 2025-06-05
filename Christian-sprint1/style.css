@@ -1,91 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .voltar {
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: black;
-  }
-  
-  h1 {
-    color: #003366;
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  
-  .imagem-container {
-    margin: 20px auto;
-    width: 100px;
-    height: 100px;
-    position: relative;
-  }
-  
-  .upload-area {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .icone::after {
-    content: '+';
-    font-size: 24px;
-    color: #888;
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    background: #fff;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  button {
-    background-color: #003366;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 25px;
-    width: 100%;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #0055aa;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: gold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.buttons.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel {
+  background-color: #ddd;
+  color: #333;
+}
+
+.confirm {
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: bold;
+}
