@@ -2,8 +2,6 @@
 
 ## Etapa de entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
-
  ### Matriz CSD e Mapa de stakeholders :
  ![alt text](<images/MatrizCSD-MapaStakeholders.png>)
 
@@ -16,8 +14,6 @@
 ## Etapa de definição
 
 ### Personas
-
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
 
 ![alt text](<images/Persona1.png>)
 ![alt text](<images/Persona2.png>)
