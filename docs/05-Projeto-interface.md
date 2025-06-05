@@ -1,7 +1,5 @@
 # Projeto de Interface
 
-**Pré-requisitos:** [Product Design](03-Product-design.md)
-
 Este documento apresenta uma visão geral da interação do usuário com o sistema, por meio das telas e funcionalidades disponíveis, bem como um protótipo interativo. As interfaces foram desenvolvidas para atender aos **requisitos funcionais**, **não funcionais** e às **histórias de usuário** abordadas na etapa de [Product Design](03-Product-design.md).
 
 ---
