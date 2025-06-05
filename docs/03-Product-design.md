@@ -1,10 +1,5 @@
 # Product design
 
-<span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
-
-
-
-
 ## Histórias de usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
