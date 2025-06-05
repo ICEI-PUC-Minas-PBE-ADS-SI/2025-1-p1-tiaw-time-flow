@@ -13,6 +13,13 @@ Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenv
 
 - https://miro.com/pt/agile/o-que-e-historia-do-usuario/
 
+- https://www.figma.com/design/6XQFY8oyfAkyrj5PYyrovW/prot%C3%B3tipo-interativo?node-id=63-1510&t=YBwbf0wqxtdeGR1s-0
+
+- https://github.com/ICEI-PUC-Minas-PBE-ADS-SI
+
+
+
+
 
 > **Links úteis**:
 > - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
