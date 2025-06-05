@@ -16,66 +16,87 @@ Fluxo geral da navegação do usuário nas principais funcionalidades do sistema
 
 ## Wireframes
 
-Apresentação das principais telas da aplicação:
+Apresentação das principais telas da aplicação. Cada wireframe foi desenvolvido com foco em usabilidade, organização visual e resposta aos requisitos definidos no Product Design.
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-
-  <div align="center">
-    <img src="images/Logo.png" width="300"/><br/>
-    <strong>Tela de carregamento</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/Tela%20login.png" width="300"/><br/>
-    <strong>Login</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/cadastro.png" width="300"/><br/>
-    <strong>Cadastro</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/Home-page.png" width="300"/><br/>
-    <strong>Home</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/Planejamento-semanal.png" width="300"/><br/>
-    <strong>Planejamento semanal</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/Sons%20e%20m%C3%BAsica.png" width="300"/><br/>
-    <strong>Sons e músicas</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/usu%C3%A1rio.png" width="300"/><br/>
-    <strong>Perfil do usuário</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/notifica%C3%A7%C3%B5es.png" width="300"/><br/>
-    <strong>Notificações</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/cronometro.png" width="300"/><br/>
-    <strong>Cronômetro</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/metas.png" width="300"/><br/>
-    <strong>Metas</strong>
-  </div>
-
-  <div align="center">
-    <img src="images/avaliacao.png" width="300"/><br/>
-    <strong>Avaliação</strong>
-  </div>
-
-</div>
+<table>
+  <tr>
+    <td><img src="images/Logo.png" width="300"/></td>
+    <td>
+      <strong>Tela de Carregamento</strong><br/>
+      Exibida ao iniciar o aplicativo, com o logotipo centralizado durante o carregamento inicial.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Tela%20login.png" width="300"/></td>
+    <td>
+      <strong>Tela de Login</strong><br/>
+      Permite que o usuário insira suas credenciais para acessar a plataforma.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/cadastro.png" width="300"/></td>
+    <td>
+      <strong>Tela de Cadastro</strong><br/>
+      Formulário para novos usuários criarem uma conta no sistema.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Home-page.png" width="300"/></td>
+    <td>
+      <strong>Home</strong><br/>
+      Página inicial com acesso rápido às principais funções como tarefas, metas e cronômetro.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Planejamento-semanal.png" width="300"/></td>
+    <td>
+      <strong>Planejamento Semanal</strong><br/>
+      Exibe a organização das tarefas da semana com opção de visualizar, editar ou excluir.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Sons%20e%20m%C3%BAsica.png" width="300"/></td>
+    <td>
+      <strong>Sons e Músicas</strong><br/>
+      Configurações para ativar músicas ambiente ou sons de foco durante as tarefas.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/usu%C3%A1rio.png" width="300"/></td>
+    <td>
+      <strong>Perfil do Usuário</strong><br/>
+      Área onde o usuário pode editar seus dados, redefinir senha e revisar atividades.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/notifica%C3%A7%C3%B5es.png" width="300"/></td>
+    <td>
+      <strong>Notificações</strong><br/>
+      Permite configurar lembretes e alertas personalizados para manter o foco.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/cronometro.png" width="300"/></td>
+    <td>
+      <strong>Cronômetro</strong><br/>
+      Ferramenta para marcar o tempo das tarefas realizadas, seguindo a técnica Pomodoro.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/metas.png" width="300"/></td>
+    <td>
+      <strong>Metas</strong><br/>
+      Interface para criação, edição e monitoramento das metas do usuário.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/avaliacao.png" width="300"/></td>
+    <td>
+      <strong>Avaliação</strong><br/>
+      Tela para o usuário dar feedback sobre o aplicativo com uma nota de até 5 estrelas.
+    </td>
+  </tr>
+</table>
 
 ---
 
