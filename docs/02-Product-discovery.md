@@ -39,3 +39,10 @@ Disciplinado, estratégico e orientado por produtividade. Quer melhorar sua perf
 
 ---
 
+### Links do Miro
+| Tópico                                            | Links de acesso                                                                 |
+|---------------------------------------------------|----------------------------------------------------------------------|
+| Matriz CSD e Mapa de Stakeholders                | [Acessar Miro](https://miro.com/app/board/uXjVIXQgrqA=/)             |
+| Entrevistas Qualitativas e Highlights de Pesquisa | [Acessar Miro](https://miro.com/app/board/uXjVIT43YvI=/)             |
+| Personas                                          | [Acessar Miro](https://miro.com/app/board/uXjVIPrSoeA=/)             |
+
