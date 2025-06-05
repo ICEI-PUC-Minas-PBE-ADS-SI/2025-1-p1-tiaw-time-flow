@@ -20,7 +20,7 @@ As entrevistas foram realizadas com três perfis distintos de profissionais: um 
 
 ### Personas
 
-A seguir, foram desenvolvidas três personas com base nos dados reais das entrevistas. Elas representam os públicos-alvo do aplicativo e guiarão as decisões de design e funcionalidades.
+A seguir, foram desenvolvidas três personas com base nos dados reais das entrevistas.
 
 **Carlos Silva – Advogado de Família (45 anos)**  
 Pessoa calma, metódica e pouco interativa. Gosta de escrever e sonha em publicar um livro. Sua maior dor é equilibrar trabalho com lazer. Precisa de uma ferramenta que o ajude a otimizar seu tempo entre demandas jurídicas e vida pessoal.
