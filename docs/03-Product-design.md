@@ -19,10 +19,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Proposta de valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
-
 ![alt text](<images/Proposta de valor.png>)
 ![alt text](<images/Proposta de valor 2.png>)
 ![alt text](<images/Proposta de valor 3.png>)
