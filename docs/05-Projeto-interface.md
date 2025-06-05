@@ -100,12 +100,9 @@ Apresentação das principais telas da aplicação. Cada wireframe foi desenvolv
 
 ## Protótipo Interativo
 
-### Visualização do vídeo:
+Você pode assistir ao vídeo de demonstração clicando no link abaixo:
 
-<video width="560" height="315" controls>
-  <source src="images/Iframe.mp4" type="video/mp4">
-  Seu navegador não suporta a exibição de vídeos.
-</video>
+[▶ Ver vídeo do protótipo](images/Iframe.mp4)
 
 ### Acesse o protótipo completo no Figma:
 
