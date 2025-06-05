@@ -1,36 +1,35 @@
 const conteudo = document.getElementById("conteudo-principal");
-const btnDiario = document.getElementById("tab-diario");
-const btnSemanal = document.getElementById("tab-semanal");
-
 let tarefasPorData = {};
 let dataSelecionada = new Date();
+dataSelecionada.setHours(0, 0, 0, 0);
 
 const diasSemana = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
 
 function carregarTarefas() {
   const salvas = localStorage.getItem("tarefasPorData");
-  if (salvas) {
-    tarefasPorData = JSON.parse(salvas);
-  }
+  if (salvas) tarefasPorData = JSON.parse(salvas);
 }
 
 function salvarTarefas() {
   localStorage.setItem("tarefasPorData", JSON.stringify(tarefasPorData));
 }
 
-btnDiario.onclick = () => {
-  btnDiario.classList.add("active");
-  btnSemanal.classList.remove("active");
-  dataSelecionada = new Date();
-  renderDiario();
-};
+function mudarAba(index) {
+  const slider = document.getElementById("slider");
+  const buttons = document.querySelectorAll(".tab-button");
 
-btnSemanal.onclick = () => {
-  btnSemanal.classList.add("active");
-  btnDiario.classList.remove("active");
+  slider.style.transform = `translateX(${index * 100}%)`;
+
+  buttons.forEach((btn, i) => {
+    btn.classList.toggle("active", i === index);
+  });
+
   dataSelecionada = new Date();
-  renderSemanal();
-};
+  dataSelecionada.setHours(0, 0, 0, 0);
+
+  if (index === 0) renderDiario();
+  else renderSemanal();
+}
 
 function formatarData(data) {
   return data.toISOString().split("T")[0];
@@ -48,7 +47,7 @@ function nomeCompletoDiaSemana(data) {
 }
 
 function renderDiario() {
-  const hoje = new Date();
+  const hoje = new Date(dataSelecionada);
   const chave = formatarData(hoje);
   const tarefas = tarefasPorData[chave] || [];
   const nomeDia = nomeCompletoDiaSemana(hoje);
@@ -68,15 +67,21 @@ function renderDiario() {
         </div>
       `).join("")}
     </div>
+    <div class="sem-tarefa" onclick="adicionarTarefaDiaria()">
+      <div class="adicionar">
+        <span class="icone">+</span>
+        <p>Adicionar tarefa para hoje!</p>
+      </div>
+    </div>
   `;
 }
 
 function renderSemanal() {
   const semana = [];
   const hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);
   const inicioSemana = new Date(hoje);
   inicioSemana.setDate(hoje.getDate() - hoje.getDay());
-  inicioSemana.setHours(0, 0, 0, 0);
 
   for (let i = 0; i < 7; i++) {
     const data = new Date(inicioSemana.getTime() + i * 24 * 60 * 60 * 1000);
@@ -93,11 +98,10 @@ function renderSemanal() {
     `);
   }
 
-  const dataCorrigida = new Date(dataSelecionada.getFullYear(), dataSelecionada.getMonth(), dataSelecionada.getDate());
-  const chaveSelecionada = formatarData(dataCorrigida);
+  const chaveSelecionada = formatarData(dataSelecionada);
   const tarefas = tarefasPorData[chaveSelecionada] || [];
-  const nomeDia = nomeCompletoDiaSemana(dataCorrigida);
-  const dataExtenso = formatarDataExtenso(dataCorrigida);
+  const nomeDia = nomeCompletoDiaSemana(dataSelecionada);
+  const dataExtenso = formatarDataExtenso(dataSelecionada);
 
   conteudo.innerHTML = `
     <div class="semana">${semana.join("")}</div>
@@ -127,6 +131,7 @@ function renderSemanal() {
 function selecionarDiaSemanal(dataStr) {
   const partes = dataStr.split("-");
   dataSelecionada = new Date(parseInt(partes[0]), parseInt(partes[1]) - 1, parseInt(partes[2]));
+  dataSelecionada.setHours(0, 0, 0, 0);
   renderSemanal();
 }
 
@@ -138,24 +143,41 @@ function adicionarTarefaSemanal() {
   if (hora && descricao) {
     if (!tarefasPorData[chave]) tarefasPorData[chave] = [];
     tarefasPorData[chave].push({ hora, descricao, feita: false });
-    salvarTarefas(); 
+    salvarTarefas();
     renderSemanal();
+  }
+}
+
+function adicionarTarefaDiaria() {
+  const hora = prompt("Digite o horário (ex: 14:00):");
+  const descricao = prompt("Digite a descrição da tarefa:");
+  const chave = formatarData(dataSelecionada);
+
+  if (hora && descricao) {
+    if (!tarefasPorData[chave]) tarefasPorData[chave] = [];
+    tarefasPorData[chave].push({ hora, descricao, feita: false });
+    salvarTarefas();
+    renderDiario();
   }
 }
 
 function marcarFeita(chave, i) {
   tarefasPorData[chave][i].feita = !tarefasPorData[chave][i].feita;
-  salvarTarefas(); 
+  salvarTarefas();
+  const btnDiario = document.getElementById("tab-diario");
   if (btnDiario.classList.contains("active")) renderDiario();
   else renderSemanal();
 }
 
 function excluirTarefa(chave, i) {
   tarefasPorData[chave].splice(i, 1);
-  salvarTarefas(); 
+  salvarTarefas();
+  const btnDiario = document.getElementById("tab-diario");
   if (btnDiario.classList.contains("active")) renderDiario();
   else renderSemanal();
 }
 
 carregarTarefas();
 renderDiario();
+
+

@@ -1,3 +1,4 @@
+/*Estrutura gerais do app - inicio*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,18 +7,21 @@ body {
   color: #333;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
-  max-width: 390px;
+  max-width: 490px;
   min-height: 100vh;
   border: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   background-color: white;
+  position: relative;
 }
 
 .header {
+  height: 10%;
   background: #ffffff;
   color: #004080;
   padding: 1rem;
@@ -29,32 +33,75 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.tabs button {
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  background: #ddd;
-  margin: 0 5px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.tabs .active {
-  background: #004080;
-  color: white;
-}
-
 main {
   padding: 1rem;
 }
 
+/*Estrutura gerais do app - fim*/
+
+/*Icones Header - inicio*/
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+/*Icones Header - fim*/
+
+/*Barra Planejamento - inicio*/
+.tabs {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 345px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #2C448C;
+  border-radius: 1rem;
+  z-index: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0%);
+}
+
+.btn-60 {
+  width: 60%;
+}
+
+.btn-30 {
+  width: 30%;
+}
+
+.tabs button {
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #2C448C;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tabs button.active {
+  color: white;
+}
+
+/*Barra Planejamento - fim*/
+
+/*CONTEÚDO E ADICIONAR/EXCLUIR TAREFAS - inicio*/
 .semana {
   display: flex;
   justify-content: space-around;
@@ -116,6 +163,8 @@ main {
   cursor: pointer;
 }
 
+/*CONTEÚDO E ADICIONAR/EXCLUIR TAREFAS - fim*/
+
 /* BLOCO ADICIONAR PRIMEIRA TAREFA */
 .sem-tarefa {
   display: flex;
@@ -143,3 +192,163 @@ main {
   font-size: 1.753rem;
   font-weight: bold;
 }
+/* BLOCO ADICIONAR PRIMEIRA TAREFA  - FIM*/
+
+/* BARRA NAVEGAÇÃO MOBILE - INICIO */
+
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  max-width: 490px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1C191E;
+  border-top: 1px solid #333;
+
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+
+.nav-item img {
+  width: 28px;
+  height: 28px;
+  filter: invert(35%);
+}
+
+.nav-item span {
+  display: block;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-item.active .icon-wrapper {
+  background-color: #2D2A30; 
+}
+
+.nav-item.active span {
+  opacity: 1;
+}
+
+
+
+/* Voltar */
+.criar {
+  position: fixed;
+  bottom: 120px;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.criar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #5b5b5b;
+  color: white;
+  border-radius: 30%;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.criar a:hover {
+  background-color: #3f3f3f;
+}
+
+
+.cronometro-card .titulo {
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 0.9;
+}
+
+.cronometro-card .tempo {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cronometro-card .botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.cronometro-card button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+}
+
+.cronometro-card button.play {
+  color: limegreen;
+}
+
+.cronometro-card button.stop {
+  color: red;
+}
+
+
+.cronometro-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 16px;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+ 
+
+
+.tempo-passado {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.progress-ring {
+
+  margin: 20px auto;
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.ring {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+

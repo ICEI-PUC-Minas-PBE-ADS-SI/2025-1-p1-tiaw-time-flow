@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Activity</title>
+  <link rel="stylesheet" href="criarcronometro.css">
+</head>
+
+<body>
+    <div class="container">
+  <div class="tela">
+    <div class="cabecalho">
+      <button onclick="window.history.back()">&times;</button>
+      <h2>Criar Temporizador</h2>
+      <button class="botao-salvar" onclick="salvarAtividade()">Salvar</button>
+    </div>
+
+    <div class="bloco-formulario">
+      <input type="text" placeholder="Nome da Atividade" id="nomeAtividade" />
+      <div class="linha seletor-cor">
+        <span>Cor</span>
+        <input type="color" id="corEscolhida" value="#a259ff" />
+      </div>
+    </div>
+
+    <div class="menu" id="menu-periodico">
+      <div class="linha toggle-menu" onclick="alternarMenu('menu-periodico')">
+        <span>Tarefa Periódica</span>
+        <span>⚙️</span>
+      </div>
+      <div class="conteudo-menu">
+        <div class="entrada-tempo">
+          <div>
+            <span>Horas</span>
+            <button onclick="mudarValor(this, -1)">-</button>
+            <span class="valor">0</span>
+            <button onclick="mudarValor(this, 1)">+</button>
+          </div>
+          <div>
+            <span>Minutos</span>
+            <button onclick="mudarValor(this, -1)">-</button>
+            <span class="valor">0</span>
+            <button onclick="mudarValor(this, 1)">+</button>
+          </div>
+        </div>
+        <div class="linha">
+          <span>Tipo</span>
+          <select>
+            <option>Dia</option>
+            <option>Semana</option>
+            <option>Mês</option>
+            <option>Ano</option>
+          </select>
+        </div>
+        <div class="linha">
+          <button onclick="salvarAtividade()">Salvar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu" id="menu-sessao">
+      <div class="linha toggle-menu" onclick="alternarMenu('menu-sessao')">
+        <span>Tarefa Única</span>
+        <span>⏳</span>
+      </div>
+      <div class="conteudo-menu">
+        <div class="entrada-tempo">
+          <div>
+            <span>Horas</span>
+            <button onclick="mudarValor(this, -1)">-</button>
+            <span class="valor">0</span>
+            <button onclick="mudarValor(this, 1)">+</button>
+          </div>
+          <div>
+            <span>Minutos</span>
+            <button onclick="mudarValor(this, -1)">-</button>
+            <span class="valor">0</span>
+            <button onclick="mudarValor(this, 1)">+</button>
+          </div>
+        </div>
+        <div class="linha">
+          <button onclick="salvarAtividade()">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="cronometro.js"> </script>
+  </div>
+</body>
+</html>
+
+
+
+</body>
+
+</html>

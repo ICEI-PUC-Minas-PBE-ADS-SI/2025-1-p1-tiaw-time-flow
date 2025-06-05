@@ -12,7 +12,7 @@
   <div class="container">
 
     <div class="header">
-      <h1>Meu Tempo</h1>
+      <h1>Metas</h1>
       <div class="profile">
         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -28,36 +28,40 @@
       </div>
     </div>
 
-    <div class="tabs">
-      <div class="slider" id="slider"></div>
-      <button id="tab-diario" class="tab-button btn-60 active" onclick="mudarAba(0)">Planejamento Diário</button>
-      <button id="tab-semanal" class="tab-button btn-30" onclick="mudarAba(1)">Semanal</button>
+
+  <script src="script.js"></script>
+
+<div class="nav-bar">
+  <a href="cronometro.html" class="nav-item" data-tab="cronometro">
+    <div class="icon-wrapper">
+      <img src="cronometro.png" alt="Ícone cronômetro" />
     </div>
-
-    <main id="conteudo-principal">
-      <!-- Conteúdo injetado via JavaScript -->
-    </main>
-
-
-    <script src="script.js"></script>
-
-    <div class="nav-bar">
-      <a href="cronometro.html" class="nav-item" data-tab="cronometro">
-        <div class="icon-wrapper">
-          <img src="cronometro.png" alt="Ícone cronômetro" />
-        </div>
-        <span>Cronômetro</span>
-      </a>
-      <a href="metas.html" class="nav-item" data-tab="metas">
-        <div class="icon-wrapper">
-          <img src="alvo.png" alt="Ícone metas" />
-        </div>
-        <span>Metas</span>
-      </a>
+    <span>Cronômetro</span>
+  </a>
+  <a href="metas.html" class="nav-item" data-tab="metas">
+    <div class="icon-wrapper">
+      <img src="alvo.png" alt="Ícone metas" />
     </div>
+    <span>Metas</span>
+  </a>
+</div>
+  </a>
+</div>
 
-  </div>
-  </div>
+<script>
+  // Pega o nome da página atual (ex: cronometro.html ou metas.html)
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Seleciona todos os itens do menu
+  const navItems = document.querySelectorAll(".nav-item");
+
+  navItems.forEach(item => {
+    const linkPage = item.getAttribute("href");
+    if (linkPage === currentPage) {
+      item.classList.add("active");
+    }
+  });
+</script>
 
 
 </body>
