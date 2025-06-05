@@ -1,58 +1,107 @@
-# Projeto de interface
+# Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> product design</a></span>
+**Pré-requisitos:** [Product Design](03-Product-design.md)
 
- Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+Este documento apresenta uma visão geral da interação do usuário com o sistema, por meio das telas e funcionalidades disponíveis, bem como um protótipo interativo. As interfaces foram desenvolvidas para atender aos **requisitos funcionais**, **não funcionais** e às **histórias de usuário** abordadas na etapa de [Product Design](03-Product-design.md).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados na parte de <a href="03-Product-design.md"> product design</a></span>.
+---
 
- ## User flow
+## User Flow
 
+Fluxo geral da navegação do usuário nas principais funcionalidades do sistema:
 
-![alt text](<images/Fluxo de usuário.png>)
+![Fluxo de usuário](images/Fluxo%20de%20usu%C3%A1rio.png)
 
-
-
-
+---
 ## Wireframes
 
-![Título: tela de carregamento do aplicativo. Descrição: Tela de carregamento ao abrir o aplicativo ](images/Logo.png)
-![Título: tela de login do aplicativo. Descrição: Tela para logar no aplicativo](<images/Tela login.png>)
-![Título: tela de cadastro do aplicativo. Descrição: Tela para cadastrar o usuário no aplicativo](images/cadastro.png)
-![Título: Home-Page. Descrição: Tela inicial do aplicativo](images/Home-page.png)
-![Título: Planejamento semanal. Descrição: Tela do aplicativo no qual mostra o planejamento semanal das tarefas](images/Planejamento-semanal.png)
-![Título: Sons e músicas. Descrição: Tela para adicionar e colocar música ambiente e sons de notificações](<images/Sons e música.png>)
-![Título: Tela do usuário. Descrição: Tela para o usuário consultar e mudar suas informações, como senha, tarefas e avaliação do aplicativo](images/usuário.png)
-![Título: Notificações. Descrição: Tela para o usuário configurar as notificações do aplicativo](images/notificações.png)
-![Título: Cronômetro. Descrição: Tela para o usuário cronometrar as tarefas iniciadas](images/cronometro.png)
-![Título: Metas. Descrição: Tela para o usuário definir, editar e adicionar as suas metas](images/metas.png)
-![Título: Avaliação. Descrição: Tela para o usuário avaliar o aplicativo em até 5 estrelas](images/avaliacao.png)
+Apresentação das principais telas da aplicação. Cada wireframe foi desenvolvido com foco em usabilidade, organização visual e resposta aos requisitos definidos no Product Design.
 
+<table>
+  <tr>
+    <td><img src="images/Logo.png" width="300"/></td>
+    <td>
+      <strong>Tela de Carregamento</strong><br/>
+      Exibida ao iniciar o aplicativo, com o logotipo centralizado durante o carregamento inicial.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Tela%20login.png" width="300"/></td>
+    <td>
+      <strong>Tela de Login</strong><br/>
+      Permite que o usuário insira suas credenciais para acessar a plataforma.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/cadastro.png" width="300"/></td>
+    <td>
+      <strong>Tela de Cadastro</strong><br/>
+      Formulário para novos usuários criarem uma conta no sistema.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Home-page.png" width="300"/></td>
+    <td>
+      <strong>Home</strong><br/>
+      Página inicial com acesso rápido às principais funções como tarefas, metas e cronômetro.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Planejamento-semanal.png" width="300"/></td>
+    <td>
+      <strong>Planejamento Semanal</strong><br/>
+      Exibe a organização das tarefas da semana com opção de visualizar, editar ou excluir.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/Sons%20e%20m%C3%BAsica.png" width="300"/></td>
+    <td>
+      <strong>Sons e Músicas</strong><br/>
+      Configurações para ativar músicas ambiente ou sons de foco durante as tarefas.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/usu%C3%A1rio.png" width="300"/></td>
+    <td>
+      <strong>Perfil do Usuário</strong><br/>
+      Área onde o usuário pode editar seus dados, redefinir senha e revisar atividades.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/notifica%C3%A7%C3%B5es.png" width="300"/></td>
+    <td>
+      <strong>Notificações</strong><br/>
+      Permite configurar lembretes e alertas personalizados para manter o foco.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/cronometro.png" width="300"/></td>
+    <td>
+      <strong>Cronômetro</strong><br/>
+      Ferramenta para marcar o tempo das tarefas realizadas, seguindo a técnica Pomodoro.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/metas.png" width="300"/></td>
+    <td>
+      <strong>Metas</strong><br/>
+      Interface para criação, edição e monitoramento das metas do usuário.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/avaliacao.png" width="300"/></td>
+    <td>
+      <strong>Avaliação</strong><br/>
+      Tela para o usuário dar feedback sobre o aplicativo com uma nota de até 5 estrelas.
+    </td>
+  </tr>
+</table>
+## Protótipo Interativo
 
+Você pode assistir ao vídeo de demonstração clicando no link abaixo:
 
+[▶ Ver vídeo do protótipo](images/Iframe.mp4)
 
+### Acesse também o protótipo no Figma:
 
-
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-
-
-### Protótipo Interativo
-
-
-<video width="560" height="315" controls>
-  <source src="images/Iframe.mp4" type="video/mp4">
-</video>
-<iframe width="560" height="315" src="images/Iframe.mp4" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-✅ [Protótipo interativo](https://www.figma.com/proto/6XQFY8oyfAkyrj5PYyrovW/protótipo-interativo?node-id=1-2&t=Ahj1ocssFcL21f0l-1)
+[Protótipo interativo no Figma](https://www.figma.com/proto/6XQFY8oyfAkyrj5PYyrovW/prot%C3%B3tipo-interativo?node-id=1-2&t=Ahj1ocssFcL21f0l-1)
