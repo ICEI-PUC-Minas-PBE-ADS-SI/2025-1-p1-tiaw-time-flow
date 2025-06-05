@@ -17,17 +17,17 @@
 
 ## Wireframes
 
-![Título: tela de carregamento do aplicativo. Descrição: Tela de carregamento ao abrir o aplicativo ](images/logo.png)
-![Título: tela de login do aplicativo. Descrição: Tela para logar no aplicativo](<images/tela login.png>)
-![Título: tela de cadastro do aplicativo. Descrição: Tela para cadastrar o usuário no aplicativo](images/Cadastro.png)
-![Título: Home-Page. Descrição: Tela inicial do aplicativo](images/home-page.png)
-![Título: Planejamento semanal. Descrição: Tela do aplicativo no qual mostra o planejamento semanal das tarefas](images/planejamento-semanal.png)
-![Título: Sons e músicas. Descrição: Tela para adicionar e colocar música ambiente e sons de notificações](<images/sons e música.png>)
-![Título: Tela do usuário. Descrição: Tela para o usuário consultar e mudar suas informações, como senha, tarefas e avaliação do aplicativo](images/Usuário.png)
-![Título: Notificações. Descrição: Tela para o usuário configurar as notificações do aplicativo](images/Notificações.png)
-![Título: Cronômetro. Descrição: Tela para o usuário cronometrar as tarefas iniciadas](images/Cronometro.png)
-![Título: Metas. Descrição: Tela para o usuário definir, editar e adicionar as suas metas](images/Metas.png)
-![Título: Avaliação. Descrição: Tela para o usuário avaliar o aplicativo em até 5 estrelas](images/Avaliacao.png)
+![Título: tela de carregamento do aplicativo. Descrição: Tela de carregamento ao abrir o aplicativo ](images/Logo.png)
+![Título: tela de login do aplicativo. Descrição: Tela para logar no aplicativo](<images/Tela login.png>)
+![Título: tela de cadastro do aplicativo. Descrição: Tela para cadastrar o usuário no aplicativo](images/cadastro.png)
+![Título: Home-Page. Descrição: Tela inicial do aplicativo](images/Home-page.png)
+![Título: Planejamento semanal. Descrição: Tela do aplicativo no qual mostra o planejamento semanal das tarefas](images/Planejamento-semanal.png)
+![Título: Sons e músicas. Descrição: Tela para adicionar e colocar música ambiente e sons de notificações](<images/Sons e música.png>)
+![Título: Tela do usuário. Descrição: Tela para o usuário consultar e mudar suas informações, como senha, tarefas e avaliação do aplicativo](images/usuário.png)
+![Título: Notificações. Descrição: Tela para o usuário configurar as notificações do aplicativo](images/notificações.png)
+![Título: Cronômetro. Descrição: Tela para o usuário cronometrar as tarefas iniciadas](images/cronometro.png)
+![Título: Metas. Descrição: Tela para o usuário definir, editar e adicionar as suas metas](images/metas.png)
+![Título: Avaliação. Descrição: Tela para o usuário avaliar o aplicativo em até 5 estrelas](images/avaliacao.png)
 
 
 
