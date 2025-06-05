@@ -2,9 +2,30 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Pré-requisitos
+- Projeto construído em HTML, CSS e JavaScript.
+- Backend com JSON Server para simular uma API RESTful.
+- Interface responsiva inspirada em Material Design.
+- Editor de código: Visual Studio Code.
+- Testes de API realizados com Postman.
 
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+Estrutura da Solução
+A solução é dividida em três principais camadas:
+1. Interface do Usuário (Frontend):
+- Tela de cadastro de atividades;
+- Tela de visualização dos cronômetros;
+- Timer circular animado via SVG;
+- Integração com JSON Server para persistência dos dados.
+
+2. Serviço de Dados (Backend Simulado):
+- JSON Server com endpoints REST (GET, POST, PUT, DELETE);
+- Banco de dados simulado via arquivo db.json.
+
+3. Ambiente de Hospedagem:
+- Hospedado no GitHub Pages para frontend;
+- JSON Server rodando localmente ou via ferramenta como Repl.it ou Glitch para testes.
+
+
 
 ## Funcionalidades
 
