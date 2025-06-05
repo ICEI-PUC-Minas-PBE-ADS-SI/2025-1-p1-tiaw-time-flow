@@ -6,17 +6,9 @@
 
 `1º semestre/2025`
 
-Objetivo Geral: Desenvolver um aplicativo de gestão de tempo que auxilie usuários na organização de suas rotinas, promovendo o aumento da produtividade e o equilíbrio entre as tarefas pessoais e profissionais.
+A proposta de desenvolver um aplicativo de gestão de tempo surgiu da crescente necessidade de soluções que ajudem as pessoas a lidarem com a sobrecarga de tarefas do dia a dia. Em um contexto onde o tempo se torna cada vez mais escasso, ferramentas de organização pessoal são essenciais para promover equilíbrio e produtividade. O projeto também oferece oportunidades para aplicar conceitos de usabilidade, acessibilidade e notificações, além de gamificação. Através de entrevistas com usuários e análise de apps já existentes, foram identificadas carências que este aplicativo busca atender de forma mais personalizada e eficiente.
 
-Objetivos Específicos:
-
-Criar um sistema de planejamento de tarefas com alertas e lembretes personalizados.
-
-Implementar recursos de categorização e priorização de atividades.
-
-Desenvolver relatórios e métricas que permitam ao usuário acompanhar sua evolução e identificar padrões de produtividade.
-
-A escolha por desenvolver um aplicativo de gestão de tempo se baseia na crescente demanda por soluções que ajudem as pessoas a lidarem com a sobrecarga de tarefas do cotidiano. Em um mundo conectado, onde o tempo é um recurso cada vez mais escasso, ferramentas eficazes de organização pessoal se tornam essenciais. Além disso, essa é uma área que possibilita a aplicação de conceitos de usabilidade e acessibilidade digital,integração com calendários e notificações, e até gamificação, o que enriquece o processo de desenvolvimento. Por meio de entrevistas com potenciais usuários e análises de ferramentas já existentes no mercado, foi possível identificar carências específicas que este projeto buscará atender de forma personalizada.
+O objetivo do projeto é criar um aplicativo que auxilie os usuários na organização de suas rotinas, por meio de um sistema de planejamento de tarefas com alertas e lembretes personalizados. O app incluirá funcionalidades para categorização e priorização de atividades, além de relatórios e métricas que permitam acompanhar o progresso e identificar padrões de produtividade. A ideia é oferecer uma ferramenta intuitiva e eficaz, que contribua para uma melhor gestão do tempo no contexto pessoal e profissional.
 
 ## Integrantes
 
