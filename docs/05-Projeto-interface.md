@@ -10,33 +10,28 @@
  ## User flow
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+![alt text](<images/Fluxo de usuário.png>)
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
 
-**✳️✳️✳️ COLOQUE AQUI O USER FLOW ✳️✳️✳️**
-
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 
 ## Wireframes
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+![Título: tela de carregamento do aplicativo. Descrição: Tela de carregamento ao abrir o aplicativo ](images/Logo.png)
+![Título: tela de login do aplicativo. Descrição: Tela para logar no aplicativo](<images/Tela login.png>)
+![Título: tela de cadastro do aplicativo. Descrição: Tela para cadastrar o usuário no aplicativo](images/cadastro.png)
+![Título: Home-Page. Descrição: Tela inicial do aplicativo](images/Home-page.png)
+![Título: Planejamento semanal. Descrição: Tela do aplicativo no qual mostra o planejamento semanal das tarefas](images/Planejamento-semanal.png)
+![Título: Sons e músicas. Descrição: Tela para adicionar e colocar música ambiente e sons de notificações](<images/Sons e música.png>)
+![Título: Tela do usuário. Descrição: Tela para o usuário consultar e mudar suas informações, como senha, tarefas e avaliação do aplicativo](images/usuário.png)
+![Título: Notificações. Descrição: Tela para o usuário configurar as notificações do aplicativo](images/notificações.png)
+![Título: Cronômetro. Descrição: Tela para o usuário cronometrar as tarefas iniciadas](images/cronometro.png)
+![Título: Metas. Descrição: Tela para o usuário definir, editar e adicionar as suas metas](images/metas.png)
+![Título: Avaliação. Descrição: Tela para o usuário avaliar o aplicativo em até 5 estrelas](images/avaliacao.png)
 
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
 
-Descrição para a tela XPTO
-
-![Exemplo de wireframe](images/exemplo-wireframe.png)
 
  
 > **Links úteis**:
@@ -50,10 +45,7 @@ Descrição para a tela XPTO
 
 ### Protótipo Interativo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto das interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse utilizando o software finalizado. Utilize as mesmas ferramentas de criação de wireframes para a montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
 
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
+<iframe src=”docs/images/Iframe.mp4” allow=”accelerometer; fullscreen; gyroscope; midi”> </iframe>
 
-✅ [Protótipo interativo](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+✅ [Protótipo interativo](https://www.figma.com/proto/6XQFY8oyfAkyrj5PYyrovW/protótipo-interativo?node-id=1-2&t=Ahj1ocssFcL21f0l-1)  
