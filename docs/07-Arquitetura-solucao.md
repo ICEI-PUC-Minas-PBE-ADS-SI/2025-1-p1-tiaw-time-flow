@@ -29,26 +29,20 @@ A solução é dividida em três principais camadas:
 
 ## Funcionalidades
 
-Esta seção apresenta as funcionalidades da solução.
+##### Funcionalidade 1 -  Ativar e desativar as notificações
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
-
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Funcionalidade que permite ao usuário ativar e desativar as notificações
 
 * **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Acessar a tela de notificações
+  * Clicar no botão de Lembrete de Tarefas
+  * Aguardar resultado
 * **Tela da funcionalidade**:
 
 ![Tela de funcionalidade](images/exemplo-funcionalidade.png)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+
 
 ### Estruturas de dados
 
