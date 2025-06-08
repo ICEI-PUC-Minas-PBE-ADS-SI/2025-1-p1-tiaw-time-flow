@@ -40,7 +40,7 @@ Funcionalidade que permite ao usuário ativar e desativar as notificações
   * Aguardar resultado
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/notificações.png)
+![Tela de funcionalidade](images/notificacoes.png)
 
 ##### Funcionalidade 2 -  Metas
 
@@ -53,7 +53,7 @@ Funcionalidade que permite ao usuário adicionar e editar metas
   * Aguardar resultado
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/metas.png)
+![Tela de funcionalidade](images/metas.png)
 
 ##### Funcionalidade 3 -  Criação de temporizador
 
@@ -65,7 +65,7 @@ Funcionalidade que permite ao usuário acessar a página de criação de tempori
   * Clicar no botão com simbolo de +
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/CriarTemporizador.png)
+![Tela de funcionalidade](images/CriarTemporizador.png)
 
 ##### Funcionalidade 4 -  Exibição de temporizador
 
@@ -78,7 +78,7 @@ Funcionalidade que exibe cronômetro criado e permite iniciar, pausar e excluir 
   * Aguardar a exibição do cronômetro
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/ExibeCronômetro.png)
+![Tela de funcionalidade](images/ExibeCronometro.png)
 
 ##### Funcionalidade 5 -  Gráfico de produtividade diária
 
@@ -91,7 +91,7 @@ Funcionalidade que permite ao usuário acessar a página de criação de tempori
   * Rolar a tela até o final 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/Produtividade.png)
+![Tela de funcionalidade](images/Produtividade.png)
 
 ##### Funcionalidade 6 -  Adicionar tarefa semanal
 
