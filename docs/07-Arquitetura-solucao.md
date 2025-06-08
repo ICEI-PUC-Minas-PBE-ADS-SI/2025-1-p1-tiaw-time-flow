@@ -103,7 +103,7 @@ Funcionalidade permitir que o usuário adicione tarefas em sua lista semanal, po
   * Clicar em planejamento semanal
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/tarefasemanal.png)
+![Tela de funcionalidade](images/tarefasemanal.png)
 
 ##### Funcionalidade 7 -  Adicionar tarefa diária
 
@@ -115,7 +115,7 @@ Funcionalidade permitir que o usuário adicione tarefas para o dia atual
   * Clicar em planejamento diário
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/tarefadiaria.png)
+![Tela de funcionalidade](images/tarefadiaria.png)
 
 ##### Funcionalidade 8 -  Cadastro/Login usuário
 
@@ -133,8 +133,8 @@ Funcionalidade permitir que o usuário logar no aplicativo caso já tenha uma co
   * Clicar em cadastro na parte inferior da tela
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/Tela-login.png)
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/cadastro.png)
+![Tela de funcionalidade](images/Telalogin.png)
+![Tela de funcionalidade](images/cadastro.png)
 
 ##### Funcionalidade 9 -  Alterar foto do Perfil
 
@@ -148,7 +148,7 @@ Funcionalidade permitir que o usuário altere sua foto de perfil
 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/usuário.png)
+![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/usuario.png)
 
 ##### Funcionalidade 10 -  Avaliação do app
 
@@ -162,7 +162,7 @@ Funcionalidade permitir que o usuário avalie o app
 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/usuário.png)
+![Tela de funcionalidade](images/avaliacao.png)
 
 ##### Funcionalidade 10 -  Escolher som ou música ambiente
 
@@ -176,7 +176,7 @@ Funcionalidade permitir que o usuário escolha uma música de fundo para usar e 
 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/Sons-e-música.png)
+![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/Sons_e_Musica.png)
 
 
 ### Estruturas de dados
