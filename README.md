@@ -16,7 +16,6 @@ O objetivo do projeto é criar um aplicativo que auxilie os usuários na organiz
 * Christian Fernandes Herculano Alberto
 * Geovanna Duarte
 * Gustavo Ribeiro Pena
-* Maria Clara Henrique Souza e Silva
 * Vitor Cesar Arruda Xavier
 
 ## Professor
