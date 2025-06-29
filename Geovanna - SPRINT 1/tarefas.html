@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 16px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      text-decoration: none;
+      font-size: 24px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .menu li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu input[type="text"] {
+      flex: 1;
+      padding: 4px;
+      font-size: 14px;
+    }
+
+    .menu button {
+      padding: 4px 8px;
+      font-size: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .edit-btn {
+      background-color:#0b4c9c;
+      color: white;
+    }
+
+    .delete-btn {
+      background-color:#0b4c9c;
+      background-color:#0b4c9c;
+      color: white;
+      margin-left: 4px;
+    }
+
+    .add-task {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .add-task input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .add-task button {
+      padding: 8px 12px;
+      background-color:#0b4c9c;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .add-task button:hover {
+      background-color: #0056b3;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">←</a>
+    <h2>Minhas Tarefas</h2>
+
+    <ul id="taskList" class="menu"></ul>
+
+    <div class="add-task">
+      <input type="text" id="newTask" placeholder="Nova tarefa...">
+      <button onclick="addTask()">Adicionar</button>
+    </div>
+  </div>
+
+  <script>
+    const taskList = document.getElementById("taskList");
+    const newTaskInput = document.getElementById("newTask");
+
+    let tasks = [
+      "Finalizar relatório",
+      "Reunião com equipe",
+      "Arrumar o quarto",
+      "Levar Luna para passear",
+      "Fazer compras",
+      "Estudar para a prova",
+    ];
+
+    function renderTasks() {
+      taskList.innerHTML = "";
+      tasks.forEach((task, index) => {
+        const li = document.createElement("li");
+
+        const span = document.createElement("span");
+        span.textContent = task;
+
+        const editBtn = document.createElement("button");
+        editBtn.textContent = "Editar";
+        editBtn.className = "edit-btn";
+        editBtn.onclick = () => editTask(index);
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Excluir";
+        deleteBtn.className = "delete-btn";
+        deleteBtn.onclick = () => deleteTask(index);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.className = "button-group";
+        buttonGroup.appendChild(editBtn);
+        buttonGroup.appendChild(deleteBtn);
+
+        li.appendChild(span);
+        li.appendChild(buttonGroup);
+
+        taskList.appendChild(li);
+      });
+    }
+
+    function addTask() {
+      const newTask = newTaskInput.value.trim();
+      if (newTask) {
+        tasks.push(newTask);
+        newTaskInput.value = "";
+        renderTasks();
+      }
+    }
+
+    function deleteTask(index) {
+      tasks.splice(index, 1);
+      renderTasks();
+    }
+
+    function editTask(index) {
+      const updatedTask = prompt("Editar tarefa:", tasks[index]);
+      if (updatedTask !== null && updatedTask.trim() !== "") {
+        tasks[index] = updatedTask.trim();
+        renderTasks();
+      }
+    }
+
+    renderTasks();
+  </script>
+</body>
+</html>
