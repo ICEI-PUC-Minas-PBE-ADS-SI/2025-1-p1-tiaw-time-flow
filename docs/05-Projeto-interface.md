@@ -69,7 +69,7 @@ Apresentação das principais telas da aplicação. Cada wireframe foi desenvolv
     </td>
   </tr>
   <tr>
-    <td><img src="images/cronometro.png" width="300"/></td>
+    <td><img src="images/ExibeCronometro.png" width="300"/></td>
     <td>
       <strong>Cronômetro</strong><br/>
       Ferramenta para marcar o tempo das tarefas realizadas, seguindo a técnica Pomodoro.
