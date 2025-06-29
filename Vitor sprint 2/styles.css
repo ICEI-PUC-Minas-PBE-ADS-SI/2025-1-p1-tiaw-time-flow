@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 375px;
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  position: relative;
+  background: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #004080;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #004080;
+}
+
+.goals {
+  padding: 20px;
+}
+
+.goal-card {
+  background: linear-gradient(to right, #003366, #004080);
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: white;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-card .green {
+  color: #00ff00;
+}
+
+.edit {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.fab {
+  position: fixed;
+  bottom: 80px;
+  right: calc(50% - 375px / 2 + 20px);
+  background: #004080;
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 375px;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  color: white;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer div.active {
+  color: #00aaff;
+}
