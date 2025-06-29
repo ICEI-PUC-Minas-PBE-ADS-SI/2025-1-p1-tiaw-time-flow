@@ -164,7 +164,7 @@ Funcionalidade permitir que o usuário avalie o app
 
 ![Tela de funcionalidade](images/avaliacao.png)
 
-##### Funcionalidade 10 -  Escolher som ou música ambiente
+##### Funcionalidade 11 -  Escolher som ou música ambiente
 
 Funcionalidade permitir que o usuário escolha uma música de fundo para usar e altere o som das notificações
 
