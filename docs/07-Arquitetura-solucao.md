@@ -148,7 +148,7 @@ Funcionalidade permitir que o usuário altere sua foto de perfil
 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/usuario.png)
+![Tela de funcionalidade](images/usuario.png)
 
 ##### Funcionalidade 10 -  Avaliação do app
 
@@ -176,7 +176,7 @@ Funcionalidade permitir que o usuário escolha uma música de fundo para usar e 
 
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](2025-1-p1-tiaw-time-flow/docs/images/Sons_e_Musica.png)
+![Tela de funcionalidade](images/Sons_e_Musica.png)
 
 
 ### Estruturas de dados
