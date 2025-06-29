@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planejamento</title>
+    <link rel="stylesheet" href="/src/public/assets/css/style.css" />
+</head>
+<body>
+    <script>
+        const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+        if (!usuarioLogado) {
+            alert("Você precisa estar logado para acessar esta página.");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Meu Tempo</h1>
+            <div class="profile">
+                <a href="perfiluser.html">
+                    <img src="/src/public/assets/images/avatarpadrao.png" alt="Avatar" width="50" height="50" />
+                </a>
+                <a href="notificacoes.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C11.45 20 10.9792 19.8042 10.5875 19.4125C10.1958 19.0208 10 18.55 10 18C10 17.45 10.1958 16.9792 10.5875 16.5875C10.9792 16.1958 11.45 16 12 16C12.55 16 13.0208 16.1958 13.4125 16.5875C13.8042 16.9792 14 17.45 14 18C14 18.55 13.8042 19.0208 13.4125 19.4125C13.0208 19.8042 12.55 20 12 20ZM12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM12 8C11.45 8 10.9792 7.80417 10.5875 7.4125C10.1958 7.02083 10 6.55 10 6C10 5.45 10.1958 4.97917 10.5875 4.5875C10.9792 4.19583 11.45 4 12 4C12.55 4 13.0208 4.19583 13.4125 4.5875C13.8042 4.97917 14 5.45 14 6C14 6.55 13.8042 7.02083 13.4125 7.4125C13.0208 7.80417 12.55 8 12 8Z" fill="#1D1B20" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Carrossel de Prioridades -->
+        <div class="priority-carousel" id="priority-carousel">
+            <div class="carousel-header">
+                <h3>⭐ Tarefas Prioritárias</h3>
+                <span class="carousel-subtitle">Não esqueça das suas tarefas importantes!</span>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" id="carousel-prev">‹</button>
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Tarefas favoritas serão inseridas aqui -->
+                </div>
+                <button class="carousel-btn carousel-btn-next" id="carousel-next">›</button>
+            </div>
+            <div class="carousel-indicators" id="carousel-indicators">
+                <!-- Indicadores serão inseridos aqui -->
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="slider" id="slider"></div>
+            <button id="tab-diario" class="tab-button btn-60 active" onclick="mudarAba(0)">Planejamento Diário</button>
+            <button id="tab-semanal" class="tab-button btn-30" onclick="mudarAba(1)">Semanal</button>
+        </div>
+
+        <main id="conteudo-principal"></main>
+
+        <!-- Modais -->
+        <div id="edit-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Editar Tarefa</h2>
+                <form id="edit-form">
+                    <label for="edit-start-time">Início:</label>
+                    <input type="time" id="edit-start-time" required />
+                    
+                    <label for="edit-end-time">Fim:</label>
+                    <input type="time" id="edit-end-time" required />
+                    
+                    <label for="edit-name">Nome:</label>
+                    <input type="text" id="edit-name" required />
+                    
+                    <div class="modal-buttons">
+                        <button type="submit" class="save-btn">Salvar</button>
+                        <button type="button" id="cancel-edit-btn" class="cancel-btn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="add-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Nova Tarefa</h2>
+                <form id="add-form">
+                    <label for="add-start-time">Início:</label>
+                    <input type="time" id="add-start-time" required />
+                    
+                    <label for="add-end-time">Fim:</label>
+                    <input type="time" id="add-end-time" required />
+                    
+                    <label for="add-name">Nome:</label>
+                    <input type="text" id="add-name" required />
+                    
+                    <div class="modal-buttons">
+                        <button type="submit" class="save-btn">Adicionar</button>
+                        <button type="button" id="cancel-add-btn" class="cancel-btn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Barra inferior -->
+        <div class="nav-bar">
+            <a href="cronometro.html" class="nav-item">
+                <img src="/src/public/assets/images/cronometro.png" alt="Cronômetro" />
+                <span>Cronômetro</span>
+            </a>
+            <a href="metas.html" class="nav-item">
+                <img src="/src/public/assets/images/alvo.png" alt="Metas" />
+                <span>Metas</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/public/assets/js/script.js"></script>
+</body>
+</html>

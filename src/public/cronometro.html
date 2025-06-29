@@ -1,0 +1,357 @@
+<!-- cronometro.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cronômetro</title>
+  <link rel="stylesheet" href="/src/public/assets/css/cronometro.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="index.html">⟵</a>
+      <h1>Cronômetro</h1>
+      <div class="profile">
+       <a href="perfiluser.html">
+          <img src="/src/public/assets/images/avatarpadrao.png" alt="Avatar" width="50" height="50" />
+        </a>
+         <a href="notificacoes.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 20C11.45 20 10.9792 19.8042 10.5875 19.4125C10.1958 19.0208 10 18.55 10 18C10 17.45 10.1958 16.9792 10.5875 16.5875C10.9792 16.1958 11.45 16 12 16C12.55 16 13.0208 16.1958 13.4125 16.5875C13.8042 16.9792 14 17.45 14 18C14 18.55 13.8042 19.0208 13.4125 19.4125C13.0208 19.8042 12.55 20 12 20ZM12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM12 8C11.45 8 10.9792 7.80417 10.5875 7.4125C10.1958 7.02083 10 6.55 10 6C10 5.45 10.1958 4.97917 10.5875 4.5875C10.9792 4.19583 11.45 4 12 4C12.55 4 13.0208 4.19583 13.4125 4.5875C13.8042 4.97917 14 5.45 14 6C14 6.55 13.8042 7.02083 13.4125 7.4125C13.0208 7.80417 12.55 8 12 8Z"
+            fill="#1D1B20" />
+        </svg></a>
+        <a href="notificacoes.html">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 20C..." fill="#1D1B20" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CONTROLE DE MÚSICA AMBIENTE -->
+    <div class="music-control" id="musicControl" style="display: none;">
+      <div class="music-header">
+        <span class="music-icon">🎵</span>
+        <span class="music-title">Música Ambiente</span>
+        <button class="music-toggle" onclick="toggleMusicPanel()">⚙️</button>
+      </div>
+      
+      <div class="music-panel" id="musicPanel" style="display: none;">
+        <div class="music-section">
+          <h4>🎼 Música de Fundo</h4>
+          <div class="music-options">
+            <button class="music-btn" onclick="playAmbientSound('/src/public/audios/natureza.mp3', '🌿 Natureza')">
+              🌿 Natureza
+            </button>
+            <button class="music-btn" onclick="playAmbientSound('/src/public/audios/piano.mp3', '🎹 Piano')">
+              🎹 Piano
+            </button>
+            <button class="music-btn" onclick="playAmbientSound('/src/public/audios/mar.mp3', '🌊 Mar')">
+              🌊 Mar
+            </button>
+            <button class="music-btn stop-btn" onclick="stopAmbientSound()">
+              🔇 Parar
+            </button>
+          </div>
+        </div>
+        
+        <div class="music-section">
+          <h4>📁 Seu Áudio</h4>
+          <div class="file-upload">
+            <input type="file" id="userAudioFile" accept="audio/*" />
+            <button class="music-btn" onclick="playUserAudio()">▶️ Tocar</button>
+          </div>
+        </div>
+        
+        <div class="music-section">
+          <h4>🔍 Buscar no YouTube</h4>
+          <div class="search-section">
+            <input type="text" id="musicSearch" placeholder="Digite o nome da música" />
+            <button class="music-btn" onclick="searchMusic()">🔍</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="current-music" id="currentMusic" style="display: none;">
+        <span class="current-title" id="currentTitle">Nenhuma música</span>
+        <div class="music-controls">
+          <button class="control-btn" onclick="togglePlayPause()" id="playPauseBtn">⏸️</button>
+          <button class="control-btn" onclick="stopAmbientSound()">⏹️</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão para criar cronômetro -->
+    <div class="criar">
+      <a href="criarcrono.html">+</a>
+    </div>
+
+    <!-- Lista de cronômetros -->
+    <div class="mostra cronometro" id="activity-list">
+      <!-- Cronômetros aparecem aqui -->
+    </div>
+
+    <!-- Barra de navegação -->
+    <div class="nav-bar">
+      <a href="cronometro.html" class="nav-item">
+        <div class="icon-wrapper">
+          <img src="/src/public/assets/images/cronometro.png" alt="Ícone cronômetro" />
+        </div>
+        <span>Cronômetro</span>
+      </a>
+      <a href="metas.html" class="nav-item">
+        <div class="icon-wrapper">
+          <img src="/src/public/assets/images/alvo.png" alt="Ícone metas" />
+        </div>
+        <span>Metas</span>
+      </a>
+    </div>
+
+    <script>
+      let ambientAudio = new Audio();
+      let isAmbientPlaying = false;
+      let currentMusicTitle = '';
+
+      function playAmbientSound(src, title) {
+        if (!src) return;
+        
+        ambientAudio.pause();
+        ambientAudio = new Audio(src);
+        ambientAudio.loop = true;
+        ambientAudio.volume = 0.3; 
+        ambientAudio.play();
+        
+        isAmbientPlaying = true;
+        currentMusicTitle = title;
+
+        localStorage.setItem('ambientAudio', src);
+        localStorage.setItem('ambientTitle', title);
+        
+        updateMusicDisplay();
+      }
+
+      function stopAmbientSound() {
+        ambientAudio.pause();
+        ambientAudio.currentTime = 0;
+        isAmbientPlaying = false;
+        currentMusicTitle = '';
+        
+        localStorage.removeItem('ambientAudio');
+        localStorage.removeItem('ambientTitle');
+        
+        updateMusicDisplay();
+      }
+
+      function togglePlayPause() {
+        if (isAmbientPlaying) {
+          ambientAudio.pause();
+          isAmbientPlaying = false;
+          document.getElementById('playPauseBtn').textContent = '▶️';
+        } else {
+          ambientAudio.play();
+          isAmbientPlaying = true;
+          document.getElementById('playPauseBtn').textContent = '⏸️';
+        }
+      }
+
+      function playUserAudio() {
+        const fileInput = document.getElementById("userAudioFile");
+        const file = fileInput.files[0];
+        
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            ambientAudio.pause();
+            ambientAudio = new Audio(e.target.result);
+            ambientAudio.loop = true;
+            ambientAudio.volume = 0.3;
+            ambientAudio.play();
+            
+            isAmbientPlaying = true;
+            currentMusicTitle = `📁 ${file.name}`;
+            updateMusicDisplay();
+          };
+          reader.readAsDataURL(file);
+        } else {
+          alert("Selecione um arquivo de áudio.");
+        }
+      }
+
+      function searchMusic() {
+        const termo = document.getElementById('musicSearch').value;
+        if (termo) {
+          const query = encodeURIComponent(termo);
+          window.open(`https://www.youtube.com/results?search_query=${query}`, '_blank');
+        } else {
+          alert("Digite algo para pesquisar.");
+        }
+      }
+
+      function toggleMusicPanel() {
+        const panel = document.getElementById('musicPanel');
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+      }
+
+      function updateMusicDisplay() {
+        const currentMusic = document.getElementById('currentMusic');
+        const currentTitle = document.getElementById('currentTitle');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        
+        if (currentMusicTitle) {
+          currentMusic.style.display = 'flex';
+          currentTitle.textContent = currentMusicTitle;
+          playPauseBtn.textContent = isAmbientPlaying ? '⏸️' : '▶️';
+        } else {
+          currentMusic.style.display = 'none';
+        }
+      }
+
+      function showMusicControl() {
+        document.getElementById('musicControl').style.display = 'block';
+      }
+
+      function hideMusicControl() {
+        document.getElementById('musicControl').style.display = 'none';
+      }
+
+      const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+      if (!usuarioLogado) {
+        alert("Você precisa estar logado para acessar esta página.");
+        window.location.href = "login.html";
+      }
+
+      const chaveActivities = `activities_${usuarioLogado.email}`;
+      const timers = {};
+      let activeTimers = 0;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const list = document.getElementById("activity-list");
+        const activities = JSON.parse(localStorage.getItem(chaveActivities)) || [];
+
+        activities.forEach((activity, index) => {
+          const div = document.createElement("div");
+          div.className = "cronometro-card";
+          const userColor = activity.color || "#1d3fa1";
+          div.style.background = `linear-gradient(135deg, black, ${userColor})`;
+
+          const totalSeconds = activity.totalSeconds ?? 0;
+          const elapsed = activity.elapsed ?? 0;
+          const remaining = totalSeconds - elapsed;
+          const progress = Math.min((elapsed / totalSeconds) * 100, 100);
+          const circleLength = 2 * Math.PI * 30;
+
+          div.innerHTML = `
+            <div class="cronometro-top">
+              <span class="titulo">${activity.name}</span>
+              <div class="grafico-e-tempo">
+                <svg class="progress-ring" width="70" height="70">
+                  <circle class="ring-bg" r="30" cx="35" cy="35" fill="transparent" stroke="#444" stroke-width="5"/>
+                  <circle class="ring" id="ring-${index}" r="30" cx="35" cy="35" fill="transparent"
+                    stroke="#fff" stroke-width="5"
+                    stroke-dasharray="${circleLength}" stroke-dashoffset="${circleLength * (1 - progress / 100)}"/>
+                </svg>
+              </div>
+              <span class="tempo" id="timer-${index}">${formatTime(remaining)}</span>
+            </div>
+            <div class="botoes">
+              <span class="tempo-passado" id="elapsed-${index}">${formatSimpleTime(elapsed)}</span>
+              <button class="play" id="play-${index}" onclick="startTimer(${index})">▶️</button>
+              <button class="stop" id="stop-${index}" onclick="stopTimer(${index})" style="display: none;">⏸️</button>
+              <button onclick="deleteActivity(${index})">🗑️</button>
+            </div>
+          `;
+
+          list.appendChild(div);
+        });
+
+        const savedAudio = localStorage.getItem('ambientAudio');
+        const savedTitle = localStorage.getItem('ambientTitle');
+        if (savedAudio && savedTitle) {
+          currentMusicTitle = savedTitle;
+          updateMusicDisplay();
+        }
+      });
+
+      function formatTime(seconds) {
+        const hrs = Math.floor(seconds / 3600);
+        const mins = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        return `${String(hrs).padStart(2, '0')}h ${String(mins).padStart(2, '0')}m ${String(secs).padStart(2, '0')}s`;
+      }
+
+      function formatSimpleTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }
+
+      function startTimer(index) {
+        const activities = JSON.parse(localStorage.getItem(chaveActivities));
+        let activity = activities[index];
+
+        if (timers[index]) return;
+        if (!activity.elapsed) activity.elapsed = 0;
+
+        const totalSeconds = activity.totalSeconds ?? 0;
+        const timerSpan = document.getElementById(`timer-${index}`);
+        const elapsedSpan = document.getElementById(`elapsed-${index}`);
+        const ring = document.getElementById(`ring-${index}`);
+        const circleLength = 2 * Math.PI * 30;
+
+        document.getElementById(`play-${index}`).style.display = "none";
+        document.getElementById(`stop-${index}`).style.display = "inline-block";
+
+        activeTimers++;
+        showMusicControl();
+
+        timers[index] = setInterval(() => {
+          if (activity.elapsed < totalSeconds) {
+            activity.elapsed++;
+            const remaining = totalSeconds - activity.elapsed;
+            const progress = Math.min((activity.elapsed / totalSeconds) * 100, 100);
+
+            timerSpan.textContent = formatTime(remaining);
+            elapsedSpan.textContent = formatSimpleTime(activity.elapsed);
+            ring.style.strokeDashoffset = circleLength * (1 - progress / 100);
+
+            activities[index] = activity;
+            localStorage.setItem(chaveActivities, JSON.stringify(activities));
+          } else {
+            clearInterval(timers[index]);
+            timers[index] = null;
+            activeTimers--;
+            
+            document.getElementById(`play-${index}`).style.display = "inline-block";
+            document.getElementById(`stop-${index}`).style.display = "none";
+
+            if (activeTimers === 0) {
+              hideMusicControl();
+            }
+          }
+        }, 1000);
+      }
+
+      function stopTimer(index) {
+        clearInterval(timers[index]);
+        timers[index] = null;
+        activeTimers--;
+
+        document.getElementById(`play-${index}`).style.display = "inline-block";
+        document.getElementById(`stop-${index}`).style.display = "none";
+
+        if (activeTimers === 0) {
+          hideMusicControl();
+        }
+      }
+
+      function deleteActivity(index) {
+        const activities = JSON.parse(localStorage.getItem(chaveActivities));
+        activities.splice(index, 1);
+        localStorage.setItem(chaveActivities, JSON.stringify(activities));
+        location.reload();
+      }
+    </script>
+  </div>
+</body>
+</html>

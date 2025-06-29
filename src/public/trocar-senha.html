@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trocar Senha</title>
+  <link rel="stylesheet" href="/src/public/assets/css/trocar-senha.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem("usuarioLogado")) {
+      alert("Você precisa estar logado para acessar esta página.");
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <div class="container">
+    <a href="perfiluser.html" class="back-button">←</a>
+    <h2>Trocar Senha</h2>
+
+    <form id="formTrocarSenha">
+      <label>Senha Atual</label>
+      <input type="password" id="senhaAtual" required>
+      
+      <label>Nova Senha</label>
+      <input type="password" id="novaSenha" required>
+      
+      <label>Confirmar Nova Senha</label>
+      <input type="password" id="confirmarSenha" required>
+      
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+
+  <!-- Modal de Sucesso -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-modal">
+      <div class="success-icon">✓</div>
+      <h3 class="success-title">Sucesso!</h3>
+      <p class="success-message">Sua senha foi alterada com sucesso!</p>
+      <button class="success-button" onclick="closeSuccessModal()">Continuar</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("formTrocarSenha").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const senhaAtual = document.getElementById("senhaAtual").value;
+      const novaSenha = document.getElementById("novaSenha").value;
+      const confirmarSenha = document.getElementById("confirmarSenha").value;
+      const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+
+      if (!usuarioLogado || !usuarioLogado.id) {
+        alert("Usuário não identificado. Faça login novamente.");
+        window.location.href = "login.html";
+        return;
+      }
+
+      if (senhaAtual !== usuarioLogado.senha) {
+        alert("Senha atual incorreta.");
+        return;
+      }
+
+      if (novaSenha !== confirmarSenha) {
+        alert("As novas senhas não coincidem.");
+        return;
+      }
+
+      const submitBtn = document.querySelector('button[type="submit"]');
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+
+      try {
+        const resposta = await fetch(`http://localhost:3000/usuarios/${usuarioLogado.id}`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ senha: novaSenha })
+        });
+
+        if (resposta.ok) {
+          usuarioLogado.senha = novaSenha;
+          sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
+          
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
+          
+          showSuccessModal();
+          
+        } else {
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
+          alert("Erro ao alterar senha no servidor.");
+        }
+      } catch (erro) {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        alert("Erro de rede: " + erro.message);
+      }
+    });
+
+    function showSuccessModal() {
+      const overlay = document.getElementById('successOverlay');
+      overlay.classList.add('show');
+    }
+
+    function closeSuccessModal() {
+      const overlay = document.getElementById('successOverlay');
+      overlay.classList.remove('show');
+      
+      setTimeout(() => {
+        window.location.href = "perfiluser.html";
+      }, 300);
+    }
+  </script>
+</body>
+</html>

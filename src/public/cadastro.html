@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Flow - Cadastro</title>
+  <link rel="stylesheet" href="/src/public/assets/css/login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="/src/public/assets/images/fundo.png" alt="" class="fundo">
+    <img src="/src/public/assets/images/Logo-time.png" alt="Time Flow" class="logo" />
+    
+    <form id="cadastroForm">
+      <div class="input-group">
+        <input type="text" id="usuario" placeholder="Nome completo" required />
+        <div class="error-message" id="usuarioError"></div>
+      </div>
+      
+      <div class="input-group">
+        <input type="email" id="email" placeholder="E-mail" required />
+        <div class="error-message" id="emailError"></div>
+      </div>
+      
+      <div class="input-group">
+        <input type="password" id="senha" placeholder="Senha" required minlength="6" />
+        <div class="password-strength" id="passwordStrength">
+          <div class="password-strength-bar" id="strengthBar"></div>
+        </div>
+        <div class="error-message" id="senhaError"></div>
+      </div>
+      
+      <div class="input-group">
+        <input type="password" id="confirmarsenha" placeholder="Confirmar senha" required />
+        <div class="error-message" id="confirmarSenhaError"></div>
+      </div>
+      
+      <button type="submit" id="btnCadastrar">
+        <span class="button-text">Cadastrar</span>
+      </button>
+    </form>
+
+    <a href="login.html" class="cadastre-link">
+      <span class="user-icon"></span>
+      Já tem conta? Entrar
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('senha').addEventListener('input', function() {
+      const password = this.value;
+      const strengthIndicator = document.getElementById('passwordStrength');
+      const strengthBar = document.getElementById('strengthBar');
+      
+      if (password.length === 0) {
+        strengthIndicator.classList.remove('show');
+        return;
+      }
+      
+      strengthIndicator.classList.add('show');
+      
+      let strength = 0;
+      if (password.length >= 6) strength++;
+      if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength++;
+      if (password.match(/[0-9]/)) strength++;
+      if (password.match(/[^a-zA-Z0-9]/)) strength++;
+      
+      strengthBar.className = 'password-strength-bar';
+      if (strength <= 1) {
+        strengthBar.classList.add('weak');
+      } else if (strength <= 2) {
+        strengthBar.classList.add('medium');
+      } else {
+        strengthBar.classList.add('strong');
+      }
+    });
+    
+    document.getElementById('cadastroForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const nome = document.getElementById('usuario').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value;
+      const confirmarSenha = document.getElementById('confirmarsenha').value;
+      const btnCadastrar = document.getElementById('btnCadastrar');
+      const buttonText = btnCadastrar.querySelector('.button-text');
+
+      clearErrors();
+      
+      let hasErrors = false;
+      
+      if (!nome || nome.length < 2) {
+        showError('usuarioError', 'Nome deve ter pelo menos 2 caracteres');
+        hasErrors = true;
+      }
+      
+      if (!email || !isValidEmail(email)) {
+        showError('emailError', 'E-mail inválido');
+        hasErrors = true;
+      }
+      
+      if (!senha || senha.length < 6) {
+        showError('senhaError', 'Senha deve ter pelo menos 6 caracteres');
+        hasErrors = true;
+      }
+      
+      if (senha !== confirmarSenha) {
+        showError('confirmarSenhaError', 'As senhas não coincidem');
+        hasErrors = true;
+      }
+      
+      if (hasErrors) return;
+      btnCadastrar.classList.add('loading');
+      btnCadastrar.disabled = true;
+      buttonText.style.opacity = '0';
+      
+      try {
+        const verifica = await fetch(`http://localhost:3000/usuarios?email=${email}`);
+        const existentes = await verifica.json();
+        
+        if (existentes.length > 0) {
+          showError('emailError', 'E-mail já está em uso. Tente outro.');
+          return;
+        }
+        
+        const novoUsuario = {
+          nome: nome,
+          login: email,
+          senha: senha,
+          email: email,
+          admin: false
+        };
+        
+        const resposta = await fetch('http://localhost:3000/usuarios', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(novoUsuario)
+        });
+        
+        if (resposta.ok) {
+          showToast('Usuário cadastrado com sucesso!', 'success');
+          setTimeout(() => {
+            window.location.href = 'login.html';
+          }, 1500);
+        } else {
+          showError('emailError', 'Erro ao cadastrar usuário.');
+        }
+      } catch (error) {
+        showError('emailError', 'Erro de rede: ' + error.message);
+      } finally {
+        btnCadastrar.classList.remove('loading');
+        btnCadastrar.disabled = false;
+        buttonText.style.opacity = '1';
+      }
+    });
+    
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    function showError(elementId, message) {
+      const errorElement = document.getElementById(elementId);
+      errorElement.textContent = message;
+      errorElement.classList.add('show');
+    }
+    
+    function clearErrors() {
+      const errors = document.querySelectorAll('.error-message');
+      errors.forEach(error => {
+        error.classList.remove('show');
+        error.textContent = '';
+      });
+    }
+    
+    function showToast(message, type = 'success') {
+      const existingToast = document.querySelector('.toast');
+      if (existingToast) {
+        existingToast.remove();
+      }
+      
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.textContent = message;
+      
+      document.body.appendChild(toast);
+      
+      setTimeout(() => toast.classList.add('show'), 100);
+      
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+  </script>
+  
+</body>
+</html>

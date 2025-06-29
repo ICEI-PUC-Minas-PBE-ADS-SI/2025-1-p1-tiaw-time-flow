@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Flow - Login</title>
+  <link rel="stylesheet" href="/src/public/assets/css/login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="/src/public/assets/images/fundo.png" alt="" class="fundo">
+    <img src="/src/public/assets/images/Logo-time.png" alt="Time Flow" class="logo" />
+    
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="email" id="email" placeholder="E-mail" required />
+        <div class="error-message" id="emailError"></div>
+      </div>
+      
+      <div class="input-group">
+        <input type="password" id="senha" placeholder="Senha" required />
+        <div class="error-message" id="senhaError"></div>
+      </div>
+      
+      <button type="submit" id="btnEntrar">
+        <span class="button-text">Entrar</span>
+      </button>
+    </form>
+
+    <a href="cadastro.html" class="cadastre-link">
+      <span class="user-icon"></span>
+      Cadastre-se
+    </a>
+  </div>
+
+  <script src="/src/public/assets/js/autentificacao.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value;
+      const btnEntrar = document.getElementById('btnEntrar');
+      const buttonText = btnEntrar.querySelector('.button-text');
+
+      clearErrors();
+      
+      if (!email) {
+        showError('emailError', 'E-mail é obrigatório');
+        return;
+      }
+      
+      if (!senha) {
+        showError('senhaError', 'Senha é obrigatória');
+        return;
+      }
+
+      btnEntrar.classList.add('loading');
+      btnEntrar.disabled = true;
+      buttonText.style.opacity = '0';
+      
+      try {
+        const sucesso = await login(email, senha);
+        
+        if (sucesso) {
+          showToast('Login realizado com sucesso!', 'success');
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1000);
+        } else {
+          showError('senhaError', 'E-mail ou senha inválidos');
+        }
+      } catch (error) {
+        showError('senhaError', 'Erro ao conectar com o servidor');
+      } finally {
+        btnEntrar.classList.remove('loading');
+        btnEntrar.disabled = false;
+        buttonText.style.opacity = '1';
+      }
+    });
+    
+    function showError(elementId, message) {
+      const errorElement = document.getElementById(elementId);
+      errorElement.textContent = message;
+      errorElement.classList.add('show');
+    }
+    
+    function clearErrors() {
+      const errors = document.querySelectorAll('.error-message');
+      errors.forEach(error => {
+        error.classList.remove('show');
+        error.textContent = '';
+      });
+    }
+    
+    function showToast(message, type = 'success') {
+      const existingToast = document.querySelector('.toast');
+      if (existingToast) {
+        existingToast.remove();
+      }
+      
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.textContent = message;
+      
+      document.body.appendChild(toast);
+      
+      setTimeout(() => toast.classList.add('show'), 100);
+      
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

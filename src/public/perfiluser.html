@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="/src/public/assets/css/perfiluser.css" />
+</head>
+<body>
+  <script>
+    const usuarioLogado = sessionStorage.getItem("usuarioLogado");
+    if (!usuarioLogado) {
+      alert("Você precisa estar logado para acessar esta página.");
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <div class="container">
+    <header class="header">
+      <a href="index.html"><span class="icon">&#8592;</span></a>
+      <span class="icon">&#8942;</span>
+    </header>
+    <div class="profile">
+      <img id="profileImage" src="/src/public/assets/images/avatarpadrao.png" alt="Avatar" class="avatar" />
+      <input type="file" id="imageUpload" accept="image/*" hidden />
+      <label for="imageUpload" class="change-photo">Alterar Foto</label>
+      <input type="text" id="userName" placeholder="Nome de Usuário" />
+    </div>
+    <ul class="menu">
+      <li><a href="trocar-senha.html">Trocar Senha</a></li>
+      <li><a href="sons.html">Sons da Notificação</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="avaliacao.html">Avalie o aplicativo</a></li>
+      <li><a href="#" id="btnSair" class="sair">Sair da Conta</a></li>
+    </ul>
+  </div>
+
+  <script src="/src/public/assets/js/codigo.js"></script>
+  <script>
+    document.getElementById("btnSair").addEventListener("click", () => {
+      sessionStorage.clear();
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

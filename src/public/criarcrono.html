@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criar Cronômetro</title>
+  <link rel="stylesheet" href="/src/public/assets/css/criarcronometro.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="cronometro.html">⟵</a>
+      <h1>Novo Cronômetro</h1>
+    </div>
+
+    <form id="form-criar-cronometro">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="horas">Horas:</label>
+      <input type="number" id="horas" name="horas" min="0" value="0" />
+
+      <label for="minutos">Minutos:</label>
+      <input type="number" id="minutos" name="minutos" min="0" value="0" />
+
+      <label for="segundos">Segundos:</label>
+      <input type="number" id="segundos" name="segundos" min="0" value="0" />
+
+      <label for="cor">Cor (opcional):</label>
+      <input type="color" id="cor" name="cor" value="#1d3fa1" />
+
+      <button type="submit">Salvar Cronômetro</button>
+    </form>
+  </div>
+
+  <script>
+    const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+    if (!usuarioLogado) {
+      alert("Você precisa estar logado para criar um cronômetro.");
+      window.location.href = "login.html";
+    }
+
+    const chaveActivities = `activities_${usuarioLogado.email}`;
+
+    function salvarCronometro(novoCronometro) {
+      const activities = JSON.parse(localStorage.getItem(chaveActivities)) || [];
+      activities.push(novoCronometro);
+      localStorage.setItem(chaveActivities, JSON.stringify(activities));
+    }
+
+    document.getElementById("form-criar-cronometro").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("nome").value.trim();
+      const horas = parseInt(document.getElementById("horas").value) || 0;
+      const minutos = parseInt(document.getElementById("minutos").value) || 0;
+      const segundos = parseInt(document.getElementById("segundos").value) || 0;
+      const color = document.getElementById("cor").value;
+
+      const totalSeconds = horas * 3600 + minutos * 60 + segundos;
+
+      if (totalSeconds <= 0) {
+        alert("Defina um tempo maior que zero.");
+        return;
+      }
+
+      const novoCronometro = {
+        name,
+        totalSeconds,
+        elapsed: 0,
+        color
+      };
+
+      salvarCronometro(novoCronometro);
+
+      alert("Cronômetro criado com sucesso!");
+      window.location.href = "cronometro.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do App</title>
+    <link rel="stylesheet" href="/src/public/assets/css/avaliacao.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-button" onclick="history.back()">
+                ←
+            </button>
+            <h1>Avaliação</h1>
+            <div></div>
+        </header>
+
+        <main>
+            <div class="rating-section">
+                <h2 class="rating-title">Qual a sua avaliação?</h2>
+                
+                <div class="stars-container">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+
+                <div class="buttons hidden" id="buttons">
+                    <button class="btn btn-cancel" id="cancel-button">CANCELAR</button>
+                    <button class="btn btn-confirm" id="confirm-button">CONFIRMAR</button>
+                </div>
+            </div>
+
+            <div class="comment-section">
+                <textarea 
+                    class="comment-input" 
+                    id="comentario" 
+                    placeholder="Deixe seu comentário sobre o app..."
+                    maxlength="500"
+                ></textarea>
+            </div>
+
+            <div class="info-section">
+                <p class="info-text">
+                    Avaliar o app é importante porque ajuda a melhorar a experiência de todos os usuários. 
+                    Com a sua opinião, os desenvolvedores conseguem identificar pontos fortes e o que precisa ser ajustado. 
+                    Além disso, boas avaliações aumentam a visibilidade do app e incentivam melhorias contínuas. 
+                    Sua avaliação faz a diferença!
+                </p>
+            </div>
+
+            <div class="comments-section">
+                <h3 class="comments-title">Comentários de outros usuários:</h3>
+                <div class="comentarios-lista" id="comentarios-lista">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/src/public/assets/js/avaliacao.js"></script>
+</body>
+</html>
