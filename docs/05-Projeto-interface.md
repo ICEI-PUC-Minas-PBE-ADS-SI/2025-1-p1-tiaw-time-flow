@@ -20,7 +20,7 @@ Apresentação das principais telas da aplicação. Cada wireframe foi desenvolv
     </td>
   </tr>
   <tr>
-    <td><img src="images/Tela%20login.png" width="300"/></td>
+    <td><img src="images/Telalogin.png" width="300"/></td>
     <td>
       <strong>Tela de Login</strong><br/>
       Permite que o usuário insira suas credenciais para acessar a plataforma.
@@ -48,21 +48,21 @@ Apresentação das principais telas da aplicação. Cada wireframe foi desenvolv
     </td>
   </tr>
   <tr>
-    <td><img src="images/Sons%20e%20m%C3%BAsica.png" width="300"/></td>
+    <td><img src="images/Sons_e_Musica.png" width="300"/></td>
     <td>
       <strong>Sons e Músicas</strong><br/>
       Configurações para ativar músicas ambiente ou sons de foco durante as tarefas.
     </td>
   </tr>
   <tr>
-    <td><img src="images/usu%C3%A1rio.png" width="300"/></td>
+    <td><img src="images/usuario.png" width="300"/></td>
     <td>
       <strong>Perfil do Usuário</strong><br/>
       Área onde o usuário pode editar seus dados, redefinir senha e revisar atividades.
     </td>
   </tr>
   <tr>
-    <td><img src="images/notifica%C3%A7%C3%B5es.png" width="300"/></td>
+    <td><img src="images/notificacoes.png" width="300"/></td>
     <td>
       <strong>Notificações</strong><br/>
       Permite configurar lembretes e alertas personalizados para manter o foco.
