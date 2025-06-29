@@ -1,0 +1,82 @@
+/* Reset de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estilo geral */
+body {
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal */
+.container {
+  background: transparent;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Caixa de login */
+.login-container {
+  background: linear-gradient(to bottom, #e3effc, #ffffff); /* Azul claro → branco */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 160px;
+  margin-bottom: 32px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0b4c9c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #093f85;
+}
+
+/* Link de cadastro */
+.cadastre-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #0b4c9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cadastre-link:hover {
+  text-decoration: underline;
+}
