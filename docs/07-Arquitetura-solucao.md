@@ -1,200 +1,133 @@
-# Arquitetura da solução
+Arquitetura da solução
 
-Estrutura da Solução
-A solução é dividida em três principais camadas:
-1. Interface do Usuário (Frontend):
-- Tela de cadastro de atividades;
-- Tela de visualização dos cronômetros;
-- Timer circular animado via SVG;
-- Integração com JSON Server para persistência dos dados.
+Estrutura da SoluçãoA solução é dividida em três principais camadas:
 
-2. Serviço de Dados (Backend Simulado):
-- JSON Server com endpoints REST (GET, POST, PUT, DELETE);
-- Banco de dados simulado via arquivo db.json.
+Interface do Usuário (Frontend):
 
-3. Ambiente de Hospedagem:
-- Hospedado no GitHub Pages para frontend;
-- JSON Server rodando localmente ou via ferramenta como Repl.it ou Glitch para testes.
+Tela de cadastro de atividades;
 
+Tela de visualização dos cronômetros;
 
+Timer circular animado via SVG;
 
-## Funcionalidades
+Integração com JSON Server para persistência dos dados.
 
-##### Funcionalidade 1 -  Ativar e desativar as notificações
+Serviço de Dados (Backend Simulado):
 
-Funcionalidade que permite ao usuário ativar e desativar as notificações
+JSON Server com endpoints REST (GET, POST, PUT, DELETE);
 
-* **Estrutura de dados:** [Notificações](#estrutura-de-dados---notificações)
-* **Instruções de acesso:**
-  * Acessar a tela de notificações
-  * Clicar no botão de Lembrete de Tarefas
-  * Aguardar resultado
-* **Tela da funcionalidade**:
+Banco de dados simulado via arquivo db.json.
 
-![Tela de funcionalidade](images/notificacoes.png)
+Ambiente de Hospedagem:
 
-##### Funcionalidade 2 -  Metas
+Hospedado no GitHub Pages para frontend;
 
-Funcionalidade que permite ao usuário adicionar e editar metas
+JSON Server rodando localmente ou via ferramenta como Repl.it ou Glitch para testes.
 
-* **Estrutura de dados:** [Metas](#estrutura-de-dados---metas)
-* **Instruções de acesso:**
-  * Acessar a tela de Metas
-  * Clicar no botão de adicionar metas (simbolo de +)
-  * Aguardar resultado
-* **Tela da funcionalidade**:
+Funcionalidades
 
-![Tela de funcionalidade](images/metas.png)
+Funcionalidade 1 - Ativar e desativar as notificações
 
-##### Funcionalidade 3 -  Criação de temporizador
+Permite ao usuário ativar e desativar as notificações.
 
-Funcionalidade que permite ao usuário acessar a página de criação de temporizador para cronômetro
-
-* **Estrutura de dados:** [criação de temporizador](#estrutura-de-dados---criação-de-temporizador)
-* **Instruções de acesso:**
-  * Acessar a tela de Cronômetro
-  * Clicar no botão com simbolo de +
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/CriarTemporizador.png)
-
-##### Funcionalidade 4 -  Exibição de temporizador
-
-Funcionalidade que exibe cronômetro criado e permite iniciar, pausar e excluir o tempo registrado em uma atividade.
+Estrutura de dados: NotificaçõesInstruções: Acessar a tela de notificações > Clicar em "Lembrete de Tarefas"Tela:
 
 
-* **Estrutura de dados:** [Exibir temporizador](#estrutura-de-dados---exibir-temporizador)
-* **Instruções de acesso:**
-  * Acessar a tela cronômetro (O temporizador deve ser criado primeiro no icone "+")
-  * Aguardar a exibição do cronômetro
-* **Tela da funcionalidade**:
 
-![Tela de funcionalidade](images/ExibeCronometro.png)
+Funcionalidade 2 - Metas
 
-##### Funcionalidade 5 -  Gráfico de produtividade diária
+Permite adicionar e editar metas.
 
-Funcionalidade que permite ao usuário acessar a página de criação de temporizador para cronômetro
-
-* **Estrutura de dados:** [Gráfico Produtividade](#estrutura-de-dados---gráfico-produtividade)
-* **Instruções de acesso:**
-  * Acessar a tela inicial
-  * Clicar em planejamento diário
-  * Rolar a tela até o final 
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/Produtividade.png)
-
-##### Funcionalidade 6 -  Adicionar tarefa semanal
-
-Funcionalidade permitir que o usuário adicione tarefas em sua lista semanal, pondendo escolher o dia da semana em que vai adicionar ou exlcuir a tarefa
-
-* **Estrutura de dados:** [Adicionar tarefa semanal](#estrutura-de-dados---adicionar-tarefa-semanal)
-* **Instruções de acesso:**
-  * Acessar a tela principal
-  * Clicar em planejamento semanal
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/tarefasemanal.png)
-
-##### Funcionalidade 7 -  Adicionar tarefa diária
-
-Funcionalidade permitir que o usuário adicione tarefas para o dia atual
-
-* **Estrutura de dados:** [Adicionar tarefa diária](#estrutura-de-dados---adicionar-tarefa-diária)
-* **Instruções de acesso:**
-  * Acessar a tela principal
-  * Clicar em planejamento diário
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/tarefadiaria.png)
-
-##### Funcionalidade 8 -  Cadastro/Login usuário
-
-Funcionalidade permitir que o usuário logar no aplicativo caso já tenha uma conta, se não tiver poderar fazer o cadastro
-
-* **Estrutura de dados:** [Login](#estrutura-de-dados---login)
-* **Instruções de acesso:**
-  * Acessar a tela inicial de login
-  * Efeturar login (A conta precisa estar cadastrada)
-* **Tela da funcionalidade**:
-
-* **Estrutura de dados:** [Cadastro](#estrutura-de-dados---cadastro)
-* **Instruções de acesso:**
-  * Acessar a tela inicial de login
-  * Clicar em cadastro na parte inferior da tela
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/Telalogin.png)
-![Tela de funcionalidade](images/cadastro.png)
-
-##### Funcionalidade 9 -  Alterar foto do Perfil
-
-Funcionalidade permitir que o usuário altere sua foto de perfil
-
-* **Estrutura de dados:** [Alterar foto](#estrutura-de-dados---alterar-foto)
-* **Instruções de acesso:**
-  * Acessar a tela principal
-  * Clicar no icone de perfil de usuario
-  * Clicar na sua foto
-
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/usuario.png)
-
-##### Funcionalidade 10 -  Avaliação do app
-
-Funcionalidade permitir que o usuário avalie o app
-
-* **Estrutura de dados:** [Avaliar app](#estrutura-de-dados---avaliar-app)
-* **Instruções de acesso:**
-  * Acessar a tela principal
-  * Clicar no icone de perfil de usuario
-  * Ir até "Avalie o aplicativo" é clicar nele
-
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/avaliacao.png)
-
-##### Funcionalidade 10 -  Escolher som ou música ambiente
-
-Funcionalidade permitir que o usuário escolha uma música de fundo para usar e altere o som das notificações
-
-* **Estrutura de dados:** [Sons e música](#estrutura-de-dados---sons-e-música)
-* **Instruções de acesso:**
-  * Acessar a tela principal
-  * Clicar no icone de perfil de usuario
-  * Ir até "Música ambiente" é clicar nele
-
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/Sons_e_Musica.png)
+Estrutura de dados: MetasInstruções: Tela de Metas > Botão de adicionar metas (+)Tela:
 
 
-### Estruturas de dados
 
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
+Funcionalidade 3 - Criação de temporizador
 
-##### Estrutura de dados - Notificações
+Permite acessar a página de criação de temporizador.
 
-Configurações de notificação do usuário, como lembretes de tarefas e alertas de calendário.
+Estrutura de dados: Criação de temporizadorInstruções: Tela de Cronômetro > Botão "+"Tela:
 
-json
+
+
+Funcionalidade 4 - Exibição de temporizador
+
+Exibe cronômetro criado e permite iniciar, pausar e excluir.
+
+Estrutura de dados: Exibir temporizadorTela:
+
+
+
+Funcionalidade 5 - Gráfico de produtividade diária
+
+Permite acessar gráfico com produtividade do dia.
+
+Estrutura de dados: Gráfico ProdutividadeInstruções: Planejamento diário > Rolar até o finalTela:
+
+
+
+Funcionalidade 6 - Adicionar tarefa semanal
+
+Permite adicionar tarefas com dia da semana.
+
+Estrutura de dados: Adicionar tarefa semanalTela:
+
+
+
+Funcionalidade 7 - Adicionar tarefa diária
+
+Permite adicionar tarefas para o dia atual.
+
+Estrutura de dados: Adicionar tarefa diáriaTela:
+
+
+
+Funcionalidade 8 - Cadastro/Login usuário
+
+Login ou cadastro de novo usuário.
+
+Estrutura de dados: Login, CadastroTela:
+
+ 
+
+Funcionalidade 9 - Alterar foto do Perfil
+
+Permite alterar a foto do perfil.
+
+Estrutura de dados: Alterar fotoTela:
+
+
+
+Funcionalidade 10 - Avaliação do app
+
+Permite avaliar o aplicativo com nota e comentário.
+
+Estrutura de dados: Avaliar appTela:
+
+
+
+Funcionalidade 11 - Escolher som ou música ambiente
+
+Permite selecionar som ambiente e notificações.
+
+Estrutura de dados: Sons e músicaTela:
+
+
+
+Estruturas de dados
+
+Todos os exemplos estão formatados em JSON.
+
 {
-    "usuario": {
+  "usuario": {
     "id": 1,
     "nome": "João Silva",
     "notificacoes": {
-    "lembretesDeTarefas": true,
-    "alertasDeCalendario": true
+      "lembretesDeTarefas": true,
+      "alertasDeCalendario": true
     }
   }
 }
-
-##### Estrutura de dados - Metas
-
-Registro de metas criadas pelo usuário com contador de progresso
-
-json
 
 {
   "id": 104,
@@ -202,12 +135,6 @@ json
   "concluidas": 0,
   "total": 3
 }
-
-##### Estrutura de dados - Criação de temporizador
-
-Dados enviados ao criar um novo temporizador personalizado.
-
-json
 
 {
   "nome": "Nome da Atividade",
@@ -217,26 +144,15 @@ json
   "decorrido": 0
 }
 
-
-##### Estrutura de dados - Exibir temporizador
-
-Dados utilizados para renderizar temporizadores ativos e pausados na tela.
-
-json
- {
+{
   "nome": "Nome da Atidade",
-  "cor": "Cor Escolhida",             
-  "tempo": "HH:MM",            
-  "segundosTotais": 7200,       
-  "decorrido": 0,         
-  "ativo": false                
+  "cor": "Cor Escolhida",
+  "tempo": "HH:MM",
+  "segundosTotais": 7200,
+  "decorrido": 0,
+  "ativo": false
 }
 
-##### Estrutura de dados - Gráfico Produtividade
-
-Dados utilizados para montar um gráfico com o tempo investido em cada atividade.
-
-json
 [
   {
     "nome": "Estudar",
@@ -250,11 +166,6 @@ json
   }
 ]
 
-##### Estrutura de dados - Adicionar tarefa semanal
-
-Tarefas registradas para a semana selecionada, organizadas por data.
-
-json
 {
   "semana": "2025-06-09",
   "tarefas": [
@@ -275,11 +186,6 @@ json
   ]
 }
 
-##### Estrutura de dados - Adicionar tarefa diária
-
-Tarefas registradas para o dia atual, com horários e status de conclusão.
-
-json
 {
   "data": "2025-06-08",
   "tarefas": [
@@ -304,21 +210,11 @@ json
   ]
 }
 
-##### Estrutura de dados - Login
-
-Credenciais do usuário utilizadas para autenticação no sistema.
-
-json
 {
   "email": "usuario@exemplo.com",
   "senha": "minhaSenha123"
 }
 
-##### Estrutura de dados - Cadastro
-
-Dados necessários para criar uma nova conta de usuário.
-
-json
 {
   "nome": "João Silva",
   "email": "joao@exemplo.com",
@@ -326,21 +222,11 @@ json
   "confirmarSenha": "senhaForte123"
 }
 
-##### Estrutura de dados - Alterar foto
-
-Atualiza a imagem de perfil do usuário.
-
-json
 {
   "usuarioId": 1,
   "fotoPerfil": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."
 }
 
-##### Estrutura de dados - Avaliar app
-
-Registra a avaliação do usuário sobre o aplicativo com nota, comentário e data.
-
-json
 {
   "usuarioId": 1,
   "avaliacao": 5,
@@ -348,66 +234,42 @@ json
   "data": "2025-06-08T14:32:00Z"
 }
 
-##### Estrutura de dados - Sons e música
-
-Preferências do usuário quanto ao som ambiente e sons de notificação.
-
-json
 {
   "musicaAmbiente": {
     "selecionado": "Sons da Natureza",
-    "opcoes": [
-      "Sons da Natureza",
-      "Nenhum"
-    ]
+    "opcoes": ["Sons da Natureza", "Nenhum"]
   },
   "somNotification": {
     "selecionado": "Clássico",
-    "opcoes": [
-    "Clássico",
-    "Silencioso"
-    ]
+    "opcoes": ["Clássico", "Silencioso"]
   }
 }
 
+{
+  "id": "eed55b91-45be-4f2c-81bc-7686135503f9",
+  "email": "admin@abc.com",
+  "login": "admin",
+  "nome": "Administrador do Sistema",
+  "senha": "123"
+}
 
+Módulos e APIs
 
+Nenhuma API externa foi utilizada.
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+Recursos visuais utilizados
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+Hospedagem
 
-json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+A aplicação foi hospedada por meio do serviço Vercel, uma plataforma de deploy contínuo.
 
+Após o desenvolvimento:
 
+O repositório foi conectado à Vercel via GitHub;
 
-### Módulos e APIs
+Cada push na branch main gera um novo build automático;
 
-Não foi utilizado nenuma API.
+CI/CD garantido sem necessidade de servidor manual;
 
-**Images**:
-![alt text](images/alvo.png)
-![alt text](images/avatarpadrao.png)
-![alt text](images/cronometro.png)
-![alt text](images/fundo.png)
-![alt text](images/fundo.png)
-![alt text](images/Logo-time.png)
-![alt text](images/seta-esquerda.png)
+Link gerado para compartilhamento, testes e uso real.
 
-
-## Hospedagem
-A hospedagem do aplicativo foram realizados por meio do serviço Vercel, uma plataforma de deploy contínuo focada em aplicações web modernas.
-
-Após o desenvolvimento da aplicação, o repositório foi conectado diretamente à Vercel por meio da integração com o GitHub. A cada nova alteração enviada (push) para a branch principal (main), a Vercel realiza automaticamente o build e publica a versão mais recente da aplicação.
-
-Essa abordagem permitiu uma entrega contínua (CI/CD), garantindo que o site estivesse sempre atualizado e disponível com as últimas mudanças. O processo de deploy é simples, rápido e eficiente, sem a necessidade de configurações complexas de servidor.
-
-A aplicação ficou disponível por meio de uma URL gerada pela Vercel, facilitando o compartilhamento e o acesso à plataforma para testes, validações e uso real
