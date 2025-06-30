@@ -395,13 +395,13 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 Não foi utilizado nenuma API.
 
 **Images**:
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/alvo.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/avatarpadrao.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/cronometro.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/fundo.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/fundo.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/Logo-time.png)
-![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/seta-esquerda.png)
+![alt text](images/alvo.png)
+![alt text](images/avatarpadrao.png)
+![alt text](images/cronometro.png)
+![alt text](images/fundo.png)
+![alt text](images/fundo.png)
+![alt text](images/Logo-time.png)
+![alt text](images/seta-esquerda.png)
 
 **Fonts:**
 * Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) 
