@@ -149,16 +149,31 @@ A aplicação é dividida em três principais camadas:
 
 ## 🧩 Estruturas de Dados
 
-### Notificações
+(*O restante das estruturas continua no arquivo por questão de tamanho*)
 
-```json
-{
-  "usuario": {
-    "id": 1,
-    "nome": "João Silva",
-    "notificacoes": {
-      "lembretesDeTarefas": true,
-      "alertasDeCalendario": true
-    }
-  }
-}
+---
+
+## 🧰 Módulos e APIs
+
+Nenhuma API externa foi utilizada.
+
+### Imagens utilizadas
+
+<img src="images/alvo.png" width="100"/>
+<img src="images/avatarpadrao.png" width="100"/>
+<img src="images/cronometro.png" width="100"/>
+<img src="images/fundo.png" width="100"/>
+<img src="images/Logo-time.png" width="100"/>
+<img src="images/seta-esquerda.png" width="100"/>
+
+---
+
+## 🚀 Hospedagem
+
+A aplicação foi hospedada na **Vercel**, com integração direta ao GitHub. A cada _push_ na branch `main`, a plataforma realiza:
+
+- Build automático
+- Deploy contínuo (CI/CD)
+- Geração de URL acessível
+
+Essa estratégia garante que a aplicação esteja **sempre atualizada**, sem necessidade de configuração manual de servidores.
