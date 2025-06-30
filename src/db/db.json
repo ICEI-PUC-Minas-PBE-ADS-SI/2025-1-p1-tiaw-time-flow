@@ -61,6 +61,14 @@
       "senha": "123456",
       "email": "caio37908@gmail.com",
       "admin": false
+    },
+    {
+      "id": "03a7",
+      "nome": "Gustavo",
+      "login": "gustavorpena05@gmail.com",
+      "senha": "jane01",
+      "email": "gustavorpena05@gmail.com",
+      "admin": false
     }
   ]
 }
