@@ -2,13 +2,6 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Pré-requisitos
-- Projeto construído em HTML, CSS e JavaScript.
-- Backend com JSON Server para simular uma API RESTful.
-- Interface responsiva inspirada em Material Design.
-- Editor de código: Visual Studio Code.
-- Testes de API realizados com Postman.
-
 Estrutura da Solução
 A solução é dividida em três principais camadas:
 1. Interface do Usuário (Frontend):
