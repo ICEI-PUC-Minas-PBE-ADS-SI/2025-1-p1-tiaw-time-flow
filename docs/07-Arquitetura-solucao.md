@@ -1,7 +1,5 @@
 # Arquitetura da solução
 
-<span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
-
 Estrutura da Solução
 A solução é dividida em três principais camadas:
 1. Interface do Usuário (Frontend):
