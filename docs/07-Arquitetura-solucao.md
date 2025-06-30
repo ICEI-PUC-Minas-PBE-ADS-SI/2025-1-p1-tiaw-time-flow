@@ -392,25 +392,30 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 
 ### Módulos e APIs
 
-Esta seção apresenta os módulos e APIs utilizados na solução.
+Não foi utilizado nenuma API.
 
 **Images**:
-
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/alvo.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/avatarpadrao.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/cronometro.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/fundo.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/fundo.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/Logo-time.png)
+![alt text](../2025-1-p1-tiaw-time-flow/src/public/assets/images/seta-esquerda.png)
 
 **Fonts:**
-
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) 
 
 **Scripts:**
-
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/) 
 
 ## Hospedagem
+A hospedagem do aplicativo foram realizados por meio do serviço Vercel, uma plataforma de deploy contínuo focada em aplicações web modernas.
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+Após o desenvolvimento da aplicação, o repositório foi conectado diretamente à Vercel por meio da integração com o GitHub. A cada nova alteração enviada (push) para a branch principal (main), a Vercel realiza automaticamente o build e publica a versão mais recente da aplicação.
 
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
+Essa abordagem permitiu uma entrega contínua (CI/CD), garantindo que o site estivesse sempre atualizado e disponível com as últimas mudanças. O processo de deploy é simples, rápido e eficiente, sem a necessidade de configurações complexas de servidor.
+
+A aplicação ficou disponível por meio de uma URL gerada pela Vercel, facilitando o compartilhamento e o acesso à plataforma para testes, validações e uso real
+
 
