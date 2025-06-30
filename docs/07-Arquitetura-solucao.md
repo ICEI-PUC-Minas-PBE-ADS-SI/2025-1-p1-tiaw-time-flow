@@ -1,4 +1,4 @@
-# 📚 Arquitetura da Solução
+#  Arquitetura da Solução
 
 ## Estrutura da Solução
 
@@ -20,7 +20,7 @@ A aplicação é dividida em três principais camadas:
 
 ---
 
-## ✅ Funcionalidades
+##  Funcionalidades
 
 ### Funcionalidade 1 - Ativar e desativar notificações
 
@@ -147,13 +147,209 @@ A aplicação é dividida em três principais camadas:
 
 ---
 
-## 🧩 Estruturas de Dados
+##  Estruturas de Dados
 
-(*O restante das estruturas continua no arquivo por questão de tamanho*)
+Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
+
+##### Estrutura de dados - Notificações
+
+Configurações de notificação do usuário, como lembretes de tarefas e alertas de calendário.
+
+json
+{
+    "usuario": {
+    "id": 1,
+    "nome": "João Silva",
+    "notificacoes": {
+    "lembretesDeTarefas": true,
+    "alertasDeCalendario": true
+    }
+  }
+}
+
+##### Estrutura de dados - Metas
+
+Registro de metas criadas pelo usuário com contador de progresso
+
+json
+
+{
+  "id": 104,
+  "titulo": "Nova Meta",
+  "concluidas": 0,
+  "total": 3
+}
+
+##### Estrutura de dados - Criação de temporizador
+
+Dados enviados ao criar um novo temporizador personalizado.
+
+json
+
+{
+  "nome": "Nome da Atividade",
+  "cor": "Cor da Atividade",
+  "tempo": "HH:MM",
+  "segundosTotais": 3600,
+  "decorrido": 0
+}
+
+
+##### Estrutura de dados - Exibir temporizador
+
+Dados utilizados para renderizar temporizadores ativos e pausados na tela.
+
+json
+ {
+  "nome": "Nome da Atidade",
+  "cor": "Cor Escolhida",             
+  "tempo": "HH:MM",            
+  "segundosTotais": 7200,       
+  "decorrido": 0,         
+  "ativo": false                
+}
+
+##### Estrutura de dados - Gráfico Produtividade
+
+Dados utilizados para montar um gráfico com o tempo investido em cada atividade.
+
+json
+[
+  {
+    "nome": "Estudar",
+    "tempo": "1h 30min",
+    "cor": "#FF5733"
+  },
+  {
+    "nome": "Exercícios",
+    "tempo": "2h",
+    "cor": "#4287f5"
+  }
+]
+
+##### Estrutura de dados - Adicionar tarefa semanal
+
+Tarefas registradas para a semana selecionada, organizadas por data.
+
+json
+{
+  "semana": "2025-06-09",
+  "tarefas": [
+    {
+      "dia": "2025-06-09",
+      "horaInicio": "12:00",
+      "horaFim": null,
+      "descricao": "estudar",
+      "concluida": false
+    },
+    {
+      "dia": "2025-06-09",
+      "horaInicio": "15:00",
+      "horaFim": "21:00",
+      "descricao": "trabalhar",
+      "concluida": false
+    }
+  ]
+}
+
+##### Estrutura de dados - Adicionar tarefa diária
+
+Tarefas registradas para o dia atual, com horários e status de conclusão.
+
+json
+{
+  "data": "2025-06-08",
+  "tarefas": [
+    {
+      "horaInicio": "08:00",
+      "horaFim": "09:30",
+      "descricao": "Aula de Natação",
+      "concluida": true
+    },
+    {
+      "horaInicio": "10:00",
+      "horaFim": "11:00",
+      "descricao": "Leitura",
+      "concluida": false
+    },
+    {
+      "horaInicio": "12:40",
+      "horaFim": "20:40",
+      "descricao": "Trabalho",
+      "concluida": false
+    }
+  ]
+}
+
+##### Estrutura de dados - Login
+
+Credenciais do usuário utilizadas para autenticação no sistema.
+
+json
+{
+  "email": "usuario@exemplo.com",
+  "senha": "minhaSenha123"
+}
+
+##### Estrutura de dados - Cadastro
+
+Dados necessários para criar uma nova conta de usuário.
+
+json
+{
+  "nome": "João Silva",
+  "email": "joao@exemplo.com",
+  "senha": "senhaForte123",
+  "confirmarSenha": "senhaForte123"
+}
+
+##### Estrutura de dados - Alterar foto
+
+Atualiza a imagem de perfil do usuário.
+
+json
+{
+  "usuarioId": 1,
+  "fotoPerfil": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."
+}
+
+##### Estrutura de dados - Avaliar app
+
+Registra a avaliação do usuário sobre o aplicativo com nota, comentário e data.
+
+json
+{
+  "usuarioId": 1,
+  "avaliacao": 5,
+  "comentario": "Aplicativo excelente! Interface intuitiva e fácil de usar.",
+  "data": "2025-06-08T14:32:00Z"
+}
+
+##### Estrutura de dados - Sons e música
+
+Preferências do usuário quanto ao som ambiente e sons de notificação.
+
+json
+{
+  "musicaAmbiente": {
+    "selecionado": "Sons da Natureza",
+    "opcoes": [
+      "Sons da Natureza",
+      "Nenhum"
+    ]
+  },
+  "somNotification": {
+    "selecionado": "Clássico",
+    "opcoes": [
+    "Clássico",
+    "Silencioso"
+    ]
+  }
+}
 
 ---
 
-## 🧰 Módulos e APIs
+##  Módulos e APIs
 
 Nenhuma API externa foi utilizada.
 
