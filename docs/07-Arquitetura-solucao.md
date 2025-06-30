@@ -155,14 +155,16 @@ Descrição das estruturas de dados utilizadas na solução com exemplos no form
 
 Configurações de notificação do usuário, como lembretes de tarefas e alertas de calendário.
 
-json
+### Notificações
+
+```json
 {
-    "usuario": {
+  "usuario": {
     "id": 1,
     "nome": "João Silva",
     "notificacoes": {
-    "lembretesDeTarefas": true,
-    "alertasDeCalendario": true
+      "lembretesDeTarefas": true,
+      "alertasDeCalendario": true
     }
   }
 }
@@ -170,8 +172,6 @@ json
 ##### Estrutura de dados - Metas
 
 Registro de metas criadas pelo usuário com contador de progresso
-
-json
 
 {
   "id": 104,
@@ -364,7 +364,7 @@ Nenhuma API externa foi utilizada.
 
 ---
 
-## 🚀 Hospedagem
+##  Hospedagem
 
 A aplicação foi hospedada na **Vercel**, com integração direta ao GitHub. A cada _push_ na branch `main`, a plataforma realiza:
 
