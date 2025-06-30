@@ -403,7 +403,6 @@ Não foi utilizado nenuma API.
 ![alt text](images/seta-esquerda.png)
 
 
-
 ## Hospedagem
 A hospedagem do aplicativo foram realizados por meio do serviço Vercel, uma plataforma de deploy contínuo focada em aplicações web modernas.
 
