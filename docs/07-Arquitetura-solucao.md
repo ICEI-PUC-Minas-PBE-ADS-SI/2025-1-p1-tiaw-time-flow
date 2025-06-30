@@ -169,6 +169,7 @@ Configurações de notificação do usuário, como lembretes de tarefas e alerta
   }
 }
 
+
 ##### Estrutura de dados - Metas
 
 Registro de metas criadas pelo usuário com contador de progresso
@@ -346,6 +347,7 @@ json
     ]
   }
 }
+```
 
 ---
 
